@@ -1,0 +1,409 @@
+---
+title: "Differences in Morphology of Corvus macrorhynchos"
+output:
+  bookdown::html_document2
+date: "`r Sys.Date()`"
+fig_caption: TRUE
+---
+
+# Results
+
+```{r loadResultsSummary, echo=FALSE, message=FALSE, warning=FALSE, comment=FALSE, error=FALSE}
+
+library(here)
+library(dplyr)
+library(stringr)
+
+targets::tar_load("measurement_summary", store = here("_targets"))
+
+list2env(measurement_summary, envir = environment())
+
+```
+
+We obtained measurements from `r sum(crowPerMuseum$nCrow)` crows (crows per museum: `r paste(crowPerMuseum$museum, crowPerMuseum$nCrow, sep = ": ", collapse = ", ")`).
+We could not obtain all measurements from every crow due to specimen positioning (Fig. \@ref(fig:overallPlot)), but for all measures we obtained a sample size of over 1000.
+Standard deviation (SD) tends to increase with magnitude of measure: with exposed culmen demonstrating the largest spread of values, and bill width at skin border demonstrating the smallest mean and SD (Fig. \@ref(fig:overallPlot)).
+
+<!-- ADD n to summary figure -->
+
+<!-- ```{r crowSampleTable, echo=FALSE, message=FALSE, warning=FALSE, comment=FALSE, error=FALSE} -->
+<!-- numberOfMeasures$name <- gsub("\\.", " ", numberOfMeasures$name) -->
+<!-- tableTibble <- numberOfMeasures %>%  -->
+<!--   select("measure" = name, nMeasures) %>%  -->
+<!--   left_join(overallMeasureSummary %>%  -->
+<!--               select(-label)) %>%  -->
+<!--   rename("Measure" = measure, "n" = nMeasures, "Mean (mm)" = mean, "SD (mm)" = sd) -->
+<!-- knitr::kable(tableTibble, digits = 2) -->
+<!-- ``` -->
+
+```{r overallPlot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The overall distribution of measurements taken, split between the sexes. Mean and standard deviation labelled below each distribution."}
+knitr::include_graphics(here("Figures", "OverallSummaryPlot.png"))
+```
+
+```{r sexHDCIs, echo=FALSE, message=FALSE, warning=FALSE}
+
+targets::tar_load("contrasts_hdci_combined", store = here("_targets"))
+
+contrasts_hdci_intraSex <- do.call(rbind, lapply(contrasts_hdci_combined, function(x){x[["hdiContrasts_intraSubspeciesContrasts"]]}))
+
+exposedCulSex <- contrasts_hdci_intraSex %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probUnder0 > 0.85) %>%
+  filter(measure %in% c("Exposed.culmen")) %>% 
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probUnder0*100, digits = 2),
+                        "%"))
+
+billBaseSex <- contrasts_hdci_intraSex %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probUnder0 > 0.85) %>%
+  filter(measure %in% c("Bill.base.length")) %>% 
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probUnder0*100, digits = 2),
+                        "%"))
+
+heightNaresSex <- contrasts_hdci_intraSex %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probUnder0 > 0.85) %>%
+  filter(measure %in% c("Height.at.nares")) %>% 
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probUnder0*100, digits = 2),
+                        "%"))
+
+```
+
+The distribution for each sex overlaps heavily regardless of measure, with females showing a slight tendency to be smaller.
+This lack of difference is reflected in the Bayesian Regression Model, where the resulting contrasts' distributions entirely overlap and are largely centred on zero (Fig. \@ref(fig:sexContrasts)).
+The contrasts suggest a lack of sexual dimorphism in these measures when examined on a species level (Fig. \@ref(fig:sexMartensContrasts)).
+Examining sexual dimorphism on an intra-subspecies level similarly showed very little difference between sexes regardless of which subspecies delineations were used.
+
+The only exceptions exist in Klockenhoff's defination of *C. m. culminatus*, *C. m. hainanus*, and the hybrid zones *lev. x mac.* and *tib. x lev.* (Fig. \@ref(fig:sexKlockContrasts)).
+*C. m. culminatus* `r exposedCulSex$label[exposedCulSex$gbase == "culminatus_Female"]`, *hainanus* `r exposedCulSex$label[exposedCulSex$gbase == "hainanus_Female"]`, and *levaillantii x macrorhynchos* `r exposedCulSex$label[exposedCulSex$gbase == "levaillantii x macrorhynchos_Female"]` saw differences in exposed culmen, whereas *levaillantii x tibetosinensis* only showed a difference in bill base length `r exposedCulSex$label[exposedCulSex$gbase == "levaillantii x tibetosinensis_Female"]`.
+*C. m. hainanus* additionally showed a difference in height at nares `r exposedCulSex$label[exposedCulSex$gbase == "hainanus_Female"]`.
+All suggesting that females tend to be smaller in these measures.
+
+We plotted the locations of the specimens against the proposed subspecies maps of Klockenhoff, and Martens et al. (Fig. \@ref(fig:subspeciesPlots)), allowing us to assign each specimen a subspecies under each proposition.
+All subspecies had representative specimens. 
+
+```{r subspeciesPlots, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The proposed subspecies separations from Klockenhoff and Martens. Points indicate the origin of measured museum specimens."}
+knitr::include_graphics(here("Figures", "combined Subspecies Plot.png"))
+```
+
+```{r countOfDifferencesPlot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Count of 85% or greater differences between adjacent subspecies, using either Klockenhoff or Martens et al. subspecies boundaries."}
+knitr::include_graphics(here("Figures", "combined Subspecies Difference Plot.png"))
+```
+
+## Klockenhoff
+
+```{r klockHDCIs, echo=FALSE, message=FALSE, warning=FALSE}
+
+targets::tar_load("contrasts_hdci_combined", store = here("_targets"))
+
+contrasts_hdci_combined <- do.call(rbind, lapply(contrasts_hdci_combined, function(x){x[["hdiContrasts_subspecies"]]}))
+
+japonesisBiggerThan_HAT <- contrasts_hdci_combined %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probOver0 > 0.99) %>% 
+  filter(measure %in% c("Height.at.nares")) %>% 
+  filter(!str_detect(gcomp, " x ")) %>% 
+  pull(gcomp) %>% 
+  paste0(collapse = ", ")
+
+japonesisHAT_mean <- contrasts_hdci_combined %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probOver0 > 0.99) %>% 
+  filter(measure %in% c("Height.at.nares")) %>% 
+  filter(!str_detect(gcomp, " x ")) %>% 
+  pull(y) %>% mean()
+
+japonesisBiggerThan_EC <- contrasts_hdci_combined %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probOver0 > 0.95) %>% 
+  filter(measure %in% c("Exposed.culmen")) %>% 
+  filter(!str_detect(gcomp, " x ")) %>% 
+  pull(gcomp) %>% 
+  paste0(collapse = ", ")
+
+japonesisEC_mean <- contrasts_hdci_combined %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probOver0 > 0.95) %>% 
+  filter(measure %in% c("Exposed.culmen")) %>% 
+  filter(!str_detect(gcomp, " x ")) %>% 
+  pull(y) %>% mean()
+
+japonensisMand_text <- contrasts_hdci_combined %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(comparison == "japonensis-mandshuricus") %>% 
+  filter(!str_detect(gcomp, " x ")) %>%
+  filter(probOver0 > 0.8) %>% 
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probOver0*100, digits = 2),
+                        "%"))
+
+haiContrasts_mean <- contrasts_hdci_combined %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(gbase == "hainanus") %>% 
+  filter(measure %in% c("Height.at.nares",
+                        "Bill.base.length",
+                        "Bill.width.at.skin.border")) %>% 
+  group_by(measure) %>% 
+  summarise(mean = mean(y))
+
+haiCol_contrasts_BBL <- contrasts_hdci_combined %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(comparison == "hainanus-colonorum") %>% 
+  filter(measure == "Bill.base.length") %>%
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probOver0*100, digits = 2),
+                        "%")) %>% 
+  pull(label)
+
+intContrasts_mean <- contrasts_hdci_combined %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(gbase == "intermedius") %>% 
+  filter(measure %in% c("Width.at.nares",
+                        "Nares.to.bill.tip")) %>% 
+  group_by(measure) %>% 
+  summarise(mean = mean(y))
+
+osaiContrasts_mean <- contrasts_hdci_combined %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(gcomp == "osai") %>% 
+  filter(probOver0 > 0.85) %>% 
+  filter(measure %in% c("Width.at.nares",
+                        "Height.at.nares",
+                        "Bill.width.at.skin.border")) %>%
+  group_by(measure) %>% 
+  summarise(mean = mean(y),
+            n = n())
+
+osaiNeighbours_contrasts <- contrasts_hdci_combined %>%
+  filter(group == "klockSpecies") %>%
+  filter(comparison %in% c("osai-connectens",
+                           "osai-colonorum")) %>%
+  filter(measure %in% c("Width.at.nares",
+                        "Height.at.nares",
+                        "Bill.width.at.skin.border")) %>%
+  group_by(measure, comparison) %>%
+  mutate(label = paste0(gcomp, ": ",
+    round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probOver0*100, digits = 2),
+                        "%"))
+
+```
+
+Examination of contrasts from the pair-wise comparisons indicate that the majority of Klockenhoff's subspecies delineations are not present in our morphological measurements (Fig. \@ref(fig:countOfDifferencesPlot).
+The contrasts reveal that the predicted distributions of many measures routinely overlap with other proposed subspecies, including their neighbours (Fig. \@ref(fig:klockContrasts)).
+Such overlap would render identification of subspecies by physical markers difficult, and field identification impossible.
+
+There are several notable exceptions.
+The strongest of these exceptions appears to be *Coruvs macrorhynchos japonensis*.
+Compared to many of the other subspecies, *C. m. japonensis* consistently shows larger bill measurements; in particular, height at nares and exposed culmen (Fig. \@ref(fig:klockContrasts)).
+For height at nares, the predicted distribution shows less than 1% overlap with the predicted distribution of other subspecies (`r japonesisBiggerThan_HAT`), indicating near complete separation.
+In these cases the average median contrast (i.e., difference) is `r round(japonesisHAT_mean, digits = 2)`mm.
+For exposed culmen, the subspecies `r japonesisBiggerThan_EC` have less than 5% overlap with the predicted distribution of *C. m. japonensis*.
+The average median contrast in this case is `r round(japonesisEC_mean, digits = 2)`mm.
+Other measures of *C. m. japonensis* show similar patterns, but less consistently and less dramatically.
+Compared to its mainland neighbour *mandshuricus*, height at nares (median contrast = `r japonensisMand_text$label[japonensisMand_text$measure == "Height.at.nares"] ` probability of a no zero difference) and exposed culmen (`r japonensisMand_text$label[japonensisMand_text$measure == "Exposed.culmen"]`) also stand out as the most different.
+
+Another exception is *C. m. hainanus*.
+Similar to *C. m. japonensis*, height at nares stands out as lager than most other subspecies (average median contrast is `r round(haiContrasts_mean$mean[haiContrasts_mean$measure == "Height.at.nares"], digits = 2)`mm).
+In addition, measures of width at skin border and bill base length are also regularly larger than other subspecies (average median contrast for width at skin border `r round(haiContrasts_mean$mean[haiContrasts_mean$measure == "Bill.width.at.skin.border"], digits = 2)`mm;  bill base length `r round(haiContrasts_mean$mean[haiContrasts_mean$measure == "Bill.base.length"], digits = 2)`mm).
+*C. m. japonensis* is the only subspecies to have any considerably larger measure than *C. m. hainanus* (Height at nares).
+However, compared to its near neighbour (*C. m. colonorum*) it appears more similar than different.
+Only bill base length is shows a sizeable non-overlap in distributions (`r haiCol_contrasts_BBL`).
+
+In contrast to the larger forms of *japonensis* and *hainanus*, *intermidis* shows a pattern of smaller bill measurements, in particular width at nares (average median contrast: `r round(intContrasts_mean$mean[intContrasts_mean$measure == "Nares.to.bill.tip"], digits = 2)`), and nares to bill tip (`r round(intContrasts_mean$mean[intContrasts_mean$measure == "Width.at.nares"], digits = 2)`).
+However, compared with its neighbours (*culminatus* and *tibetosinensis*) there are no discernible differences, with all distributions overlapping considerably. 
+
+Another subspecies that shows a pattern of smaller bill measurements is *C. m. osai*. 
+It has considerably smaller measures of width at nares than `r osaiContrasts_mean$n[osaiContrasts_mean$measure == "Width.at.nares"]` subspecies (`r round(osaiContrasts_mean$mean[osaiContrasts_mean$measure == "Width.at.nares"], digits = 2)` mm), smaller measures of height at nares than `r osaiContrasts_mean$n[osaiContrasts_mean$measure == "Height.at.nares"]` subspecies (`r round(osaiContrasts_mean$mean[osaiContrasts_mean$measure == "Height.at.nares"], digits = 2)` mm), and smaller width at skin border than `r osaiContrasts_mean$n[osaiContrasts_mean$measure == "Bill.width.at.skin.border"]` subspecies (`r round(osaiContrasts_mean$mean[osaiContrasts_mean$measure == "Bill.width.at.skin.border"], digits = 2)` mm).
+*C. m. osai* exists on a small island chain, neighbouring *connectens* to its north east and *colonorum* to its west.
+It shows smaller measures in width (`r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-connectens" & osaiNeighbours_contrasts$measure == "Width.at.nares"]`; `r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-colonorum" & osaiNeighbours_contrasts$measure == "Width.at.nares"]`) and height at nares (`r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-connectens" & osaiNeighbours_contrasts$measure == "Height.at.nares"]`; `r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-colonorum" & osaiNeighbours_contrasts$measure == "Height.at.nares"]`), as well as width at skin border (`r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-connectens" & osaiNeighbours_contrasts$measure == "Bill.width.at.skin.border"]`; `r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-colonorum" & osaiNeighbours_contrasts$measure == "Bill.width.at.skin.border"]`) than both its nearest neighbours.
+
+Outside of these two larger subspecies, and two smaller, all other proposed subspecies appear to be largely similar in most measures.
+
+```{r klockContrasts, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The contrasts' distributions illustrating the difference between all Klockenhoff proposed subspecies. The lines indicate the 95% Highest Density Credible Interval surrouinding the median."}
+knitr::include_graphics(here("Figures", "klockSpecies_HDCI_contrasts.png"))
+```
+
+## Martens
+
+```{r martensHDCIs, echo=FALSE, message=FALSE, warning=FALSE}
+
+martens_contrasts_TA <- contrasts_hdci_combined %>% 
+  filter(group == "martSpecies") %>% 
+  filter(gbase == "macrorhynchos", gcomp %in% c("philippinus")) %>% 
+  filter(measure == "Tarsus.length") %>%
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probOver0*100, digits = 2),
+                        "%")) %>% 
+  select(label, gcomp, gbase)
+
+# overall average median difference all top right half point estimates
+overallAvgContrast <- contrasts_hdci_combined %>% 
+  filter(group == "martSpecies") %>% 
+  filter(!str_detect(measure, "^PC")) %>% 
+  filter(comparison %in% c("japonensis-hybrid",
+                           "levailllantii-hybrid",
+                           "macrorhynchos-hybrid",
+                           "philippinus-hybrid",
+                           "levailllantii-japonensis",
+                           "macrorhynchos-japonensis",
+                           "philippinus-japonensis",
+                           "macrorhynchos-levailllantii",
+                           "philippinus-levailllantii",
+                           "philippinus-macrorhynchos"
+                           )) %>% 
+  pull(y) %>% mean()
+
+```
+
+Compared to Klockenhoff, the comparisons between Martens' proposed subspecies reveal fewer differences (Fig. \@ref(fig:martContrasts)).
+Partly because there are dramatically fewer subspecies, but mainly because much of the variation occurs within the large subspecies divisions.
+The only measure that appears to differ between subspecies is tarsus length, which is larger in *C. m. macrorhynchos* compared to *C. m. philippinus* (`r martens_contrasts_TA$label[martens_contrasts_TA$gcomp == "philippinus"]`; Fig. \@ref(fig:martContrasts)).
+
+```{r martContrasts, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The contrasts' distributions illustrating the difference between all Martens proposed subspecies. The lines indicate the 95% Highest Density Credible Interval surrouinding the median."}
+knitr::include_graphics(here("Figures", "martSpecies_HDCI_contrasts.png"))
+```
+
+## Exploration
+
+When treated as a single contiguous population, none of the the morphophonemics show a strong multi-modal distribution (see Fig. \@ref(fig:overallPlot)), instead looking mostly normal.
+
+When viewed in the IDW (Inverse Distance Weighted interpolation) maps we can see hotspots in height at nares, exposed culmen, and tarsus length centred on Northern Japan, in particular Hokkaido (Fig. \@ref(fig:idwMaps)); crows in this region include some of the largest measured (Fig. \@ref(fig:measuresMap)).
+Not only do these crows have the largest bills in absolute terms, but the ratio of height at nares to tarsus length highlights a tall bill even for their larger overall size.
+
+On the other end of the scale, the crows in northern India and Pakistan have some of the smallest bills in measures of width, length, and height.
+They also have comparatively small tarsi compared to most crows outside of this area, suggesting an overall smaller bird.
+However, the ratio of height at nares to tarsus length, as well as the ratio of exposed culmen to tarsus length, suggests that their bills are small even for their size.
+Further emphasising the small bill to body ratio in northern India and Pakistan, is the lack of the same pattern in southern India.
+In southern India birds have among the smallest tarsus measurements, but largely average bill measurements.
+The northern India and Pakistan crows also exhibit another unique characteristic, their nares are located further forward on their bills compared to C. macrorhynchos from other areas.
+This is visible in the ratio of exposed culmen to nares to bill tip.
+
+Conversely, crows in the Philippines have nares that are placed further back on the bill, closer to the forehead.
+The total exposed culmen in Philippine crows is largely average, but the nares to bill to measure are among the largest (>40 mm).
+In addition, for their size (i.e., tarsus length) they tend to have long bills (i.e., exposed culmen) with the extra length tending to occur in the distal region of the bill (nares to bill tip).
+
+Width measures (bill base width, bill width at skin border, and width at nares) do not show dramatic differences across the distribution, and largely follow overall patterns of tarsus length.
+
+The separation of the Japonensis by Klockenhoff seems to have the strongest support based on our measurements; this is reflected the Bayesians comparisons (Fig. \@ref(fig:klockContrasts)), as well as visible hotspots in the IDW maps (Fig. \@ref(fig:idwMaps)).
+Secondarily, the Philippinus subspecies (defined by both Klockenhoff and Martens et al.), while not showing major differences in the Bayesian comparisons, does appear to show some distinct characteristics in the IDW maps.
+
+# Discussion
+
+To characterise the variation of *Corvus macrocrhynchos* morphology, and to test existing subspecies propositions, we measured key morphological characteristics from over 1000 museum specimens.
+Our Bayesian comparisons of difference, revealed no evidence for overall sexual dimorphism, nor any sexual dimorphism within any proposed subspecies.
+The subspecies propositions provided by Klockenhoff and Martens et al. were largely unsupported by our measures of morphology, with several notable exceptions: *Corvus m. japonensis* as defined by Klockenhoff shows larger bills than other subspecies, as does *C. m. hainanus*; whereas both *C. m. intermedius* and *C. m. osai* show smaller bills.
+We found very few clear differences in morphology using the Martens et al. subspecies, with the exception of the smaller tarsus lengths of *C. m. philippinus*.
+Beyond these predefined subspecies, our further explorations revealed Japan, the Philippines and northern India and Pakistan as hosting the most distinct phenotypes.
+The Japanese crows appear larger overall, and have proportionately taller bills.
+The northern Indian and Pakistan crows appear smaller overall, and have proportionately smaller bills with nares positioned closer to the bill tip.
+The Philippine crows also appear smaller overall, and have proportionately longer bills with nares positioned closer to the forehead.
+Outside of these hotspots, the remainder of the distribution appears gradiated and morphological differences appear relatively minor.
+
+- why no dimorphism
+The lack of sexual dimorphism is not particularly unexpected as previous field descriptions of this species have indicated males and females are indistinguishable (Whistler 2008).
+This is also a common characteristic seen in other *Corvus spp.* (e.g., EXAMPLE SPECIES HERE + CITES).
+Previous studies have suggested the lack of size dimorphism reflects a lack of intra-sexual competition common in monogamous species, as well as smaller sex differences in parental care (Owens and Hartley, 1998).
+This taken together with my behavioural observations (Chapter 3) would suggest that *C. macrorhynchos* is a socially monogamous species, where both sexes care for the young.
+
+- why don't klock and martens dont quite work
+While the lack of evidence of dimorphism appear to align with previous assertions regarding *C. macrorhynchos*, the geographic patterns in morphology do not.
+The subspecies suggested by Klockenhoff do not appear clearly in our data.
+For example, crows on either side of the boundary between *culminatus* and *intermedius* appear similar in all measures.
+In addition, Klockenhoff's suggests four distinct subspecies in south east Asia; our data does not reveal (either in the Bayesian comparison or IDW maps) any clear evidence of subspecies boundaries in this region.
+It is worth noting that Klockenhoff's subspecies boundaries are based on the differences in feather parasites.
+These parasites may be subject to different environmental pressures rendering a disconnect between the physical characteristics of the crows and the species' presence of these parasites; thereby, explaining the disconnect between Klocknehoff's proposition and our data.
+[MAYBE ADD ADDITIONAL WHY HERE FOR KLOCK]
+The subspecies proposition from Martens et al., in particular for *C. m. japonensis* and *leve* have a massive east to west distribution.
+*C. m. japonenis* encompasses the largest and smallest crows that we measured; therefore, its comparison to any other subspecies would result in a near complete overlap in morphometric measures.
+Martens et al. splits are based on call structure, with field data conducted in three locations.
+As such, the Martens et al. subspecies may be missing key boundaries existing with their larger subspecies definitions.
+For example, we highlight the distinctly larger crows of Japan and smaller crows of the Philippines, while Martens et al.'s sampling does not occur for any of the island subspecies.
+A proper comparison of the morphometrics to call structure would require more extensive sampling of crow calls.
+
+- why big and tall japan
+
+<!-- Nakamura and Kryukov 2016 - cranium smaller in west -->
+
+- why small bill india
+
+
+- why nares placed different
+
+
+- key places to investigate more
+
+
+
+<!-- post-hoc comparisons to do -->
+<!-- Hokkaido versus everything -->
+
+```{r idwMaps, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Maps showing an interpolated inverse distance weighted heatmap of all collected measures and the first three pricipal components. Thicker contours match the legend breaks, three thinner contours exist between each break."}
+knitr::include_graphics(here("Figures", "IDWmaps.png"))
+```
+
+
+<!-- overall weak trend with elevation-  needs analysis to confirm but plots looks ok -->
+
+<!-- longCrowData %>% -->
+<!--   # filter(Corrected.Longitude < 90) %>% -->
+<!--   # filter(Corrected.Latitude > 20) %>% -->
+<!--   # filter(martSpecies == c("levailllantii") | is.na(martSpecies)) %>% -->
+<!--   filter(klockSpecies %in% c("culminatus", "intermedius", "culminatus x levaillantii")) %>% -->
+<!--   ggplot() + -->
+<!--   geom_point(aes(x = Elevation, y = value, colour = martSpecies)) + -->
+<!--   facet_wrap(facets = vars(measure), scales = "free") + -->
+<!--   scale_x_log10() + -->
+<!--   theme_bw() -->
+
+\clearpage
+
+# Supplementary Figures
+
+<!-- add median to plots, add units to x -->
+```{r sexContrasts, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The contrasts' distributions illustrating the difference between male and female crows. The lines indicate the 95% Highest Density Credible Interval surroundding the median."}
+knitr::include_graphics(here("Figures", "_HDCI_sex_contrasts.png"))
+```
+
+```{r sexKlockContrasts, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The contrasts' distributions illustrating the difference between male and female crows. The lines indicate the 95% Highest Density Credible Interval surroundding the median."}
+knitr::include_graphics(here("Figures", "klockSpecies_HDCI_intraSubspeciesSex_contrasts.png"))
+```
+
+```{r sexMartensContrasts, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The contrasts' distributions illustrating the difference between male and female crows. The lines indicate the 95% Highest Density Credible Interval surroundding the median."}
+knitr::include_graphics(here("Figures", "martSpecies_HDCI_intraSubspeciesSex_contrasts.png"))
+```
+
+```{r measuresMap, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Scaled measures plotted to jittered locations (1.5x1.5)."}
+knitr::include_graphics(here("Figures", "measuresMap.png"))
+```
