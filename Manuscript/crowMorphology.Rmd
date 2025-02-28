@@ -1,0 +1,431 @@
+---
+title: "The Biogeography of Morphological Variation in Corvus macrorhynchos"
+output: pdf_document
+date: "`r Sys.Date()`"
+---
+
+# Introduction
+
+Examining morphology can help us pinpoint particular selection pressures on a species.
+Environmental drivers such as climate often produce morphological responses (Ashton 2002).
+Behaviour can both limit morphological changes by providing a way to adapt without having to physically change (Huey et al. 2003), or drive changes itself by enabling the exploitation of new niches (Wyles et al.
+1983).
+Observing the morphological variation, or lack thereof, in a species that occupies a wide gradient of environmental variation will aid identification of the relative importance of behaviour and morphology in adaptation.
+Crows and ravens (Genus *Corvus*) exist across many different environments in their distribution across the globe, both as a group and generally within *Corvus* species (del Hoyo et al.2016).
+For example, 23 out of the 44 extant species within *Corvus* would be considered ‘generalists’ and have large distributions across multiple habitat types (IUCN 2024).
+One could expect a crow species spread across a wide area to have a wide range of morphological adaptations to tackle this diversity of environments.
+However, *Corvus* species are famously behaviourally adaptable, presenting an opportunity to reduce environmental pressure without the need for morphological changes (Sol et al.
+2002).
+This survival through behavioural flexibility may help to explain the lack of phenotypic diversity across the *Corvus* genus.
+
+In instances where morphology does differ in *Corvus*, it has provided insight into how behavior can drive morphological adaptations.
+For example, New Caledonian Crows have a bill shape that enhances their ability to make and use tools.
+The presence of such a unique morphological character allows us to infer the importance of tool use in New Caledonian Crows’ survival (Rutz and St Clair, 2012; Troscianko et al. 2012).
+New Caledonian Crows live in an isolated, relatively homogeneous island environment with limited mobility, population size and foraging options, that have probably enhanced the selection pressure for more efficient foraging.
+Examining a more widely distributed and mobile crow that lives across a diversity of environments may offer a more typical scenario encompassing the interplay of behavior, environment, and morphology in Corvus spp.
+The Jungle Crow (Corvus macrorhynchos) is one of the most widely distributed crow species, ranging from Russia in the north to Indonesia in the south, from Afghanistan in the west to the Japan in the East.
+The presence of geographical patterns of morphological variation in Jungle Crows has been noted for nearly a century (Hartert and Zoological Museum (Tring, England) 1922), but these descriptions do not include the full species range.
+The presence of areas of divergence does seem likely given the shared bio-geographical barriers seen in other widely distributed Asian species, particularly between islands and the mainland, as well as across the drastic elevation changes in the Himalayas (Garg et al. 2016; Gwee et al. 2019; Singh et al. 2020).
+Several studies, reinforced by field guides, already suggest that Jungle Crows differ significantly in morphology on regional scales (Dickinson et al. 2004; Madge and Burn 2010; Nakamura and Kryukov 2016) and several species or subspecies divisions have been proposed (Klockenhoff 1969, Martens et al. 2000).
+Until now, however, a rigorous distribution-wide investigation has yet to be conducted and presents the opportunity to highlight macro-patterns of morphological variation in relation to the species' full range of geography and climate.
+So far, the most comprehensive taxonomic examinations of C.macrorhynchos have not analyzed morphological variation but used feather parasites (Klockenhoff 1969) and vocalizations (Martens et al. 2000).
+Both reports refer to C. macrorhynchos as a species complex, but Klockenhoff (1969) proposes 12 distinct subspecies with three areas of hybridization of which seven are mainland subspecies and five island subspecies (Figure 2-1).
+These subspecies were defined by the biogeographic boundaries of mallophagan feather parasites (genus Myrsidea) that live on C. macrorhynchos, as opposed to any characteristics of the birds themselves.
+Martens et al. (2000) suggests four full species, heavily relying on Klockenhoff’s original boundaries as well as personal observations in the Himalayas (Martens and Eck 1995) where vocal sampling was deficient (Figure 2-1).
+Martens et al. (2000) groups several island and mainland populations that Klockenhoff (1969) separated, but C. macrorhynchos in the Philippines remain separated in both proposals.
+In neither study was sampling effort high enough to cover the entire distributions, nor were the parasite or vocal patterns connected with morphological variation or explicit ecological factors.
+Neither of these studies have been corroborated by genetic studies, so population or species-level delineation in this group remains unresolved.
+(Note: Although Martens et al. (2000) suggests species-level divisions, we will refer to both proposed groupings as subspecies for simplicity.) 
+
+Many specimens of Jungle Crow from across the species' distribution exist collectively in museums, presenting an opportunity for a more comprehensive examination of preserved morphological variation in relation to the proposals of population delineation based on feather parasite or vocalization, as well as the ability to relate morphological/behavioral variation to ecological variation.
+Furthermore, by covering the entire distribution of C. macrorhynchos, such a comprehensive morphological data set can potentially suggest behavioral variation (e.g.
+in foraging) and serve as a foundation for identifying biogeographical patterns in a way that previous studies could not.
+Museum specimens best preserve the “hard" morphology of birds, specifically bills and legs.
+The bill and tarsal morphology of C.
+macrorhynchos are of particular interest due to their direct interactions with both the environment and behavior.
+Tarsus length can be used as a proxy for body size (Senar and Pascual 1997) and present one possible adaptation to varying temperature (Ashton 2002).
+C. macrorhynchos range from seasonally cold areas in the Amur region and high-altitude Himalayas, to the consistently hot equatorial regions of Southern India and Indonesia.
+The bill size and shape could offer an alternative or complimentary adaptation to temperature, aiding in heat transfer or providing a buffer to protect against heat loss in cold air (Geist 2000; Probst et al.
+2022).
+Beyond temperature, the bill presents the primary means through which crows interact with the world, functioning in foraging, vocalizing and object manipulation.
+The diverse array of environments in which these crows currently exist, from urban and agricultural land to primary forest, rocky coastline, and tropical islands, suggests a whole suite of varying selection pressures on bill shape and size.
+Hard tissue measures present an accessible opportunity to view the realized impact of the environment and the crows’ interactions with it through their morphology.
+Here we report a study of morphological variation of museum specimens representing the whole of C.
+macrorhynchos’ distribution.
+
+Our objectives were as follows:
+
+- To compare geographic variation in bill and tarsus measurements from museum specimens across the subspecies divisions previously proposed by Klockenhoff (1969) and Martens et al. (2000).
+We predict that we will find morphological differences between populations on the Philippines and those on the mainland, as both proposals separate this population, and one genetic study supports this (Jønsson et al. 2012).
+Aside from this population, we predict that there is likely to be significant overlap in morphometrics between proposed subspecies.
+
+- To use these measurements to identify biogeographic trends in morphology, focusing on outlying areas where crows may have a unique combination of morphological traits.
+Once again, we predict that there will be an area of unique morphology in the Philippines and possibly other islands far from the mainland, but that over most of the C. macrorhynchos’ distribution, measurements will be similar.
+
+- To investigate whether these areas of morphological interest correlate with broad bioclimatic variables such as temperature, seasonality, and precipitation.
+We predict that C. macrorhynchos is likely to follow Bergmann’s rule, with measurements increasing as temperatures decrease (Ashton 2002).
+Combined, these results highlight the variation present in C. macrorhynchos morphology that may be indicative of their adaptation to the environment and evolutionary history.
+
+```{r specimenLocations, include=FALSE, caption = "The locations of origin for all museum specimens[.] measured in this study plotted on the proposed subspecies separations from a) Klockenhoff (1969) and b) Martens (2000). Klockenhoff described 12 subspecies and 3 hybrid zones (denoted by the lighter shaded colours). Martens described 4 subspecies and two hybrid zones denoted by the grey shaded areas."}
+
+```
+
+# Methods 
+
+We used previously published data from <!--- alamshah -->.
+Briefly this dataset comprised measures of hard tissue morphology of C. macrorhynchos from across their distribution.
+The sample was based on all available specimens of C. macrorhynchos in the American Museum of Natural History (AMNH), Cornell University Museum of Vertebrates (CUMV), Field Museum of Natural History (FMNH), Natural History Museum (NHMUK), and the Smithsonian National Museum of Natural History (USNM).
+The protocol for taking measurements involved the taking of a standardised set of photographs; namely four surrounding the head, and two focused on the legs/feet.
+The use of photograph in measuring bird morphometrics was previously demonstrated as by Williams et al., who... <!--- little more detail fomr that study would be good here -->
+All the photographs contained standardised reference scales (i.e., background grid or ruler) that enabled digital measures to be collected using imageJ.
+Individuals with damage, fixed in positions that prohibited clear photographs, or demonstrated clear juvenile characteristics (i.e., grey chest feathers, short tail, pink surrounding mouth), were excluded.
+
+Overall the <!-- alamshah --> dataset contained measurements from 1069 crows total (crows per museum: AMNH: 229, CUMV: 1, FMNH: 118, NHMUK: 550, USNM: 171).
+
+## Analysis
+
+In order to explore how patterns of morphological variation in the dataset corresponded to the proposed subspecies divisions of Klockenhoff (1969), and Martens et al. (2000), we took their maps (Figures 2 and 4 in the respective papers) and used QGIS’ georeferencing function (QGIS Development Team 2023) to convert the figure images to geospatial polygons.
+For Klockenhoff's map, we used coastal and inland landmarks as georeferences; for Martens et al.'s map, we used the provided latitude and longitude scales.
+Using the geospatial polygons created from these maps, we then assigned two subspecies identities (one by Klockenhoff’s divisions, one by Martens’ divisions) to our measured specimens by comparing latitude and longitude locations.
+
+We used a suite of Bayesian models to examine whether the group assignment (subspecies as identified by Klockenhoff or Martens et al. and sex) could predict the values derived from the photographs and the four ratios based on combined measures.
+The models had the formula: μ ~ 0 + group:sex,σ ~ 0 + group:sex 
+Where µ is the mean measure, σ is the variance of the measure, group is defined by subspecies and sex is the sex of the crow as identified by the museum metadata.
+This allows for a different effect of sex between groups.
+All of the models used the Student distribution to reduce the influence of outliers.
+
+There is very little morphometric data for C. macrorhynchos at the subspecies level in the published literature, and therefore we relied on broadly defined population-level priors for each measure during parameterisation of the Bayesian models.
+Our use of population priors with wide standard deviations means that our estimates of subspecies differences are likely to be conservative, as we had limited options to integrate past knowledge.
+We created priors for measures for Width at Nares (WN) (17mm), Height at Nares (HN) (22mm), total Exposed Culmen (ExCu) (62mm), Nares to Bill Tip (NtBT) (42mm) and Tarsus Length (TaLe) (57mm) by averaging the corresponding bill measurements provided by AVONET for C. macrorhynchos (Tobias et al. 2022) and using those means as centres for normal priors with wide (20) standard deviations.
+We set all priors to have a lower bound of 0.
+For measures without prior data, we used the default uninformative priors generated by the brms package (Bürkner 2017, 2018, 2021).
+
+<!-- CHECK NUMBER OF MODELS CREATED -->
+We ran a total of 22 Bayesian Regression Models, one for each combination of group (subspecies model, sex) and measure (each morphological measure and the 4 composite measures).
+We used the brms package to run the models, with the following settings: 1000 iterations, 200 warmup, 4 chains, and 2 thinning factor.
+
+To diagnose whether the models had adequately converged, we examined rhat values (checking they were near 1), autocorrelation function plots, and trace plots.
+To report performance, we calculated R² values, and plotted Posterior Predictive Check plots.
+Once the models were complete and we extracted the posterior predictive distributions, we calculated all pair-wise contrasts between groups.
+We used these resulting contrast distributions to examine the degree of difference between proposed subspecies.
+For plotting purposes, we selected the 95% highest density credible interval around the median (HDCI).
+
+After assessing the predictability of Klockenhoff and Martens et al.’s proposed subspecies delineations, we looked for spatial patterns in the morphometric measures themselves.
+As the measures were only collected at defined geographic points and sampling was not systematic, we elected to use Inverse Distance Weighting (IDW) to estimate the measures as if there was continuous variation between sampled locations.
+This allowed us to generate smoothed heat maps for each measure over the crows' distribution and reveal areas with consistently high or low measures.
+We used mean square error to select the optimal power of distance for the IDW calculations, exploring values of 0.001, 0.01, and 10.
+We allowed a different optimal power to be selected per measure.
+
+<!--- R packages used here or in the data/code availability thing --->
+
+## Climate Comparison
+
+To explore the relationship between our morphological measurements and climate factors across C. macrorhynchos’ distribution, we plotted the specimen collection locations and their associated measurements against maps of mean annual temperature, temperature seasonality, and annual precipitation provided by the CMCC-BioClimInd dataset (Noce et al. 2019, 2020).
+This dataset was developed from global bioclimatic data collected from 1960 – 1999.
+Mean annual temperature refers to the annual average of daily mean temperature, averaged across all years in the collected time period.
+Temperature seasonality refers to the temperature change throughout the year; using the average daily mean temperature for each month, it is quantified as the standard deviation among the monthly values.
+Higher standard deviation values mean greater seasonal variability.
+Annual precipitation refers to the annual sum of daily precipitation averaged along all years within the time period.
+<!-- BELOW NEEDS REPLACING WITH BAYESIAN MODEL DETAILS -->
+We then ran additional Bayesian Regression Models to examine the relationship between each measure and our chosen three climatic variables.
+<!--- check whether we re-run models as unified models, ie. all climate variables together as predictors? --->
+<!-- We assessed linear regression performance with R2 values and adjusted the α level with the Bonferroni correction. -->
+
+# Results
+
+```{r loadResultsSummary, echo=FALSE, message=FALSE, warning=FALSE, comment=FALSE, error=FALSE}
+
+library(here)
+library(dplyr)
+library(stringr)
+
+targets::tar_load("measurement_summary", store = here("_targets"))
+
+list2env(measurement_summary, envir = environment())
+
+```
+
+We obtained measurements from `r sum(crowPerMuseum$nCrow)` crows (crows per museum: `r paste(crowPerMuseum$museum, crowPerMuseum$nCrow, sep = ": ", collapse = ", ")`).
+We could not obtain all measurements from every crow due to specimen positioning (Fig. \@ref(fig:overallPlot)), but for all measures we obtained a sample size of over 1000.
+Standard deviation (SD) tends to increase with magnitude of measure: with exposed culmen demonstrating the largest spread of values, and bill width at skin border demonstrating the smallest mean and SD (Fig. \@ref(fig:overallPlot)).
+
+
+```{r overallPlot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The overall distribution of measurements taken, split between the sexes. Mean and standard deviation labelled below each distribution."}
+knitr::include_graphics(here("Figures", "OverallSummaryPlot.png"))
+```
+
+```{r sexHDCIs, echo=FALSE, message=FALSE, warning=FALSE}
+
+targets::tar_load("contrasts_hdci_combined", store = here("_targets"))
+
+contrasts_hdci_intraSex <- do.call(rbind, lapply(contrasts_hdci_combined, function(x){x[["hdiContrasts_intraSubspeciesContrasts"]]}))
+
+exposedCulSex <- contrasts_hdci_intraSex %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probUnder0 > 0.85) %>%
+  filter(measure %in% c("Exposed.culmen")) %>% 
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probUnder0*100, digits = 2),
+                        "%"))
+
+billBaseSex <- contrasts_hdci_intraSex %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probUnder0 > 0.85) %>%
+  filter(measure %in% c("Bill.base.length")) %>% 
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probUnder0*100, digits = 2),
+                        "%"))
+
+heightNaresSex <- contrasts_hdci_intraSex %>% 
+  filter(group == "klockSpecies") %>% 
+  filter(probUnder0 > 0.85) %>%
+  filter(measure %in% c("Height.at.nares")) %>% 
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probUnder0*100, digits = 2),
+                        "%"))
+
+```
+
+The distribution for each sex overlaps heavily regardless of measure, with females showing a tendency to be negligibly smaller on average.
+This lack of difference is reflected in the Bayesian Regression Model, where the resulting distributions of contrasts entirely overlap and are largely centered on zero (Fig. \@ref(fig:sexContrasts)).
+The contrasts suggest a lack of sexual dimorphism in these measures when examined on an overall species level.
+
+The only exceptions exist in Klockenhoff's defination of *C. m. culminatus*, *C. m. hainanus*, and the hybrid zones *lev. x mac.* and *tib. x lev.* (Fig. \@ref(fig:sexKlockContrasts)).
+*C. m. culminatus* `r exposedCulSex$label[exposedCulSex$gbase == "culminatus_Female"]`, *hainanus* `r exposedCulSex$label[exposedCulSex$gbase == "hainanus_Female"]`, and *levaillantii x macrorhynchos* `r exposedCulSex$label[exposedCulSex$gbase == "levaillantii x macrorhynchos_Female"]` saw differences in exposed culmen, whereas *levaillantii x tibetosinensis* only showed a difference in bill base length `r exposedCulSex$label[exposedCulSex$gbase == "levaillantii x tibetosinensis_Female"]`.
+*C. m. hainanus* additionally showed a difference in height at nares `r exposedCulSex$label[exposedCulSex$gbase == "hainanus_Female"]`.
+All suggesting that females tend to be smaller in these measures.
+
+On an intra-group level, Klockenhoff’s groupings also showed little difference between sexes for the majority of measures.
+The only exceptions exist in Klockenhoff’s definition of C. m. culminatus, C. m. hainanus, and the hybrid zones levaillantii x macrorhynchos and tibetosinensis x levaillantii (Fig. \@ref(fig:sexKlockContrasts)).
+
+C. m. culminatus, hainanus and levaillantii x macrorhynchos showed differences in ExCu, whereas levaillantii x tibetosinensis only showed a difference in BBL.
+C. m. hainanus additionally showed a difference in HN.
+All of these suggest that females tend to be smaller in these measures.
+
+Martens et al’s groupings showed very little difference between sexes (Fig. \@ref(fig:sexMartensContrasts)).
+
+We plotted the locations of the specimens against the proposed subspecies maps of Klockenhoff and of Martens et al., allowing us to assign each specimen a subspecies under each proposition.
+Our sample of specimens included representatives from all proposed groupings from both studies (Fig. \@ref(fig:subspeciesPlots)).
+
+```{r subspeciesPlots, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The proposed subspecies separations from Klockenhoff and Martens. Points indicate the origin of measured museum specimens."}
+knitr::include_graphics(here("Figures", "combined Subspecies Plot.png"))
+```
+
+```{r countOfDifferencesPlot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Number of measures (direct and composite) with significant differences between adjacent subspecies, using either Klockenhoff (1969) or Martens et al. (2000) subspecies boundaries. The number inside the line, along with line thickness and brightness, indicates a greater number of measures with an 85% or higher chance of being different. Grey lines indicate that no measures between the two subspecies had >85% chance of being different. Each subspecies is a different colour which corresponds to its map colour in Figure 2. Lines connect subspecies to their geographic neighbours. Gray dots on the Klockenhoff panel indicate hybrid zones."}
+knitr::include_graphics(here("Figures", "combined Subspecies Difference Plot.png"))
+```
+
+## Assessing parasite-based subspecies proposal (Klockenhoff model)
+
+Examination of contrasts from the pair-wise comparisons indicated that the majority of Klockenhoff’s subspecies delineations based on feather parasites were not present in any one of our morphological measurements (Fig. \@ref(fig:countOfDifferencesPlot).
+The contrasts revealed that the predicted distributions of many measures routinely overlapped with other proposed subspecies, including their neighbours (Fig. \@ref(fig:klockContrasts)).
+Such overlap would render identification of subspecies by physical markers difficult, and field identification nearly impossible.
+
+There were several notable exceptions where a subspecies recognized by Klockenhoff stood out biometrically in our data set.
+The strongest of these exceptions was Corvus macrorhynchos japonensis.
+Compared to many other subspecies from Klockenhoff, C. m. japonensis consistently showed larger bill measurements, particularly in Height at Nares (HN) and Exposed Culmen (ExCu) (Fig. \@ref(fig:klockContrasts)).
+For HN, the predicted distribution showed less than 1% overlap with the predicted distribution of other subspecies (`r japonesisBiggerThan_HAT`), indicating near complete separation.
+In these cases, the average median contrast (i.e., difference) was `r round(japonesisHAT_mean, digits = 2)`mm.
+For ExCu, the subspecies `r japonesisBiggerThan_EC` had less than 5% overlap with the predicted distribution of C. m. japonensis.
+The average median contrast in this case is `r round(japonesisEC_mean, digits = 2)`mm.
+Other measures of C. m. japonensis showed similar patterns, but less consistently and less dramatically.
+Compared to its mainland neighbour *mandshuricus*, height at nares (median contrast = `r japonensisMand_text$label[japonensisMand_text$measure == "Height.at.nares"] ` probability of a no zero difference) and exposed culmen (`r japonensisMand_text$label[japonensisMand_text$measure == "Exposed.culmen"]`) also stand out as the most different.
+
+Another exception is *C. m. hainanus*.
+Similar to *C. m. japonensis*, height at nares stands out as lager than most other subspecies (average median contrast is `r round(haiContrasts_mean$mean[haiContrasts_mean$measure == "Height.at.nares"], digits = 2)`mm).
+In addition, measures of width at skin border and bill base length are also regularly larger than other subspecies (average median contrast for width at skin border `r round(haiContrasts_mean$mean[haiContrasts_mean$measure == "Bill.width.at.skin.border"], digits = 2)`mm;  bill base length `r round(haiContrasts_mean$mean[haiContrasts_mean$measure == "Bill.base.length"], digits = 2)`mm).
+*C. m. japonensis* is the only subspecies to have any considerably larger measure than *C. m. hainanus* (Height at nares).
+However, compared to its near neighbour (*C. m. colonorum*) it appears more similar than different.
+Only bill base length is shows a sizeable non-overlap in distributions (`r haiCol_contrasts_BBL`).
+
+In contrast to the larger forms of *japonensis* and *hainanus*, *intermidis* shows a pattern of smaller bill measurements, in particular width at nares (average median contrast: `r round(intContrasts_mean$mean[intContrasts_mean$measure == "Nares.to.bill.tip"], digits = 2)`), and nares to bill tip (`r round(intContrasts_mean$mean[intContrasts_mean$measure == "Width.at.nares"], digits = 2)`).
+However, compared with its neighbours (*culminatus* and *tibetosinensis*) there are no discernible differences, with all distributions overlapping considerably. 
+
+
+Another subspecies that shows a pattern of smaller bill measurements is *C. m. osai*. 
+It has considerably smaller measures of width at nares than `r osaiContrasts_mean$n[osaiContrasts_mean$measure == "Width.at.nares"]` subspecies (`r round(osaiContrasts_mean$mean[osaiContrasts_mean$measure == "Width.at.nares"], digits = 2)` mm), smaller measures of height at nares than `r osaiContrasts_mean$n[osaiContrasts_mean$measure == "Height.at.nares"]` subspecies (`r round(osaiContrasts_mean$mean[osaiContrasts_mean$measure == "Height.at.nares"], digits = 2)` mm), and smaller width at skin border than `r osaiContrasts_mean$n[osaiContrasts_mean$measure == "Bill.width.at.skin.border"]` subspecies (`r round(osaiContrasts_mean$mean[osaiContrasts_mean$measure == "Bill.width.at.skin.border"], digits = 2)` mm).
+*C. m. osai* exists on a small island chain, neighbouring *connectens* to its north east and *colonorum* to its west.
+It shows smaller measures in width (`r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-connectens" & osaiNeighbours_contrasts$measure == "Width.at.nares"]`; `r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-colonorum" & osaiNeighbours_contrasts$measure == "Width.at.nares"]`) and height at nares (`r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-connectens" & osaiNeighbours_contrasts$measure == "Height.at.nares"]`; `r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-colonorum" & osaiNeighbours_contrasts$measure == "Height.at.nares"]`), as well as width at skin border (`r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-connectens" & osaiNeighbours_contrasts$measure == "Bill.width.at.skin.border"]`; `r osaiNeighbours_contrasts$label[osaiNeighbours_contrasts$comparison == "osai-colonorum" & osaiNeighbours_contrasts$measure == "Bill.width.at.skin.border"]`) than both its nearest neighbours.
+
+Outside of these two larger subspecies, and two smaller, all other proposed subspecies appeared to be statistically similar in most measures and not clearly separable as distinct subspecies on the basis of morphometrics.
+
+```{r klockContrasts, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The contrasts' distributions illustrating the difference between all Klockenhoff proposed subspecies. The lines indicate the 95% Highest Density Credible Interval surrouinding the median."}
+knitr::include_graphics(here("Figures", "klockSpecies_HDCI_contrasts.png"))
+```
+
+## Assessing call-based subspecies proposal (Martens et al. model)
+
+```{r martensHDCIs, echo=FALSE, message=FALSE, warning=FALSE}
+
+martens_contrasts_TA <- contrasts_hdci_combined %>% 
+  filter(group == "martSpecies") %>% 
+  filter(gbase == "macrorhynchos", gcomp %in% c("philippinus")) %>% 
+  filter(measure == "Tarsus.length") %>%
+  mutate(label = paste0(round(y, digits = 2),
+                        "mm, 95% HDCI ",
+                        round(ymin, digits = 2),
+                        " to ",
+                        round(ymax, digits = 2),
+                        ", ", round(probOver0*100, digits = 2),
+                        "%")) %>% 
+  select(label, gcomp, gbase)
+
+# overall average median difference all top right half point estimates
+overallAvgContrast <- contrasts_hdci_combined %>% 
+  filter(group == "martSpecies") %>% 
+  filter(!str_detect(measure, "^PC")) %>% 
+  filter(comparison %in% c("japonensis-hybrid",
+                           "levailllantii-hybrid",
+                           "macrorhynchos-hybrid",
+                           "philippinus-hybrid",
+                           "levailllantii-japonensis",
+                           "macrorhynchos-japonensis",
+                           "philippinus-japonensis",
+                           "macrorhynchos-levailllantii",
+                           "philippinus-levailllantii",
+                           "philippinus-macrorhynchos"
+  )) %>% 
+  pull(y) %>% mean()
+
+```
+
+Compared to Klockenhoff, the comparisons between Martens' proposed subspecies reveal fewer differences (Fig. \@ref(fig:martContrasts)).
+Partly because there are dramatically fewer subspecies, but mainly because much of the variation occurs within the large subspecies divisions.
+The only measure that appears to differ between subspecies is tarsus length, which is larger in *C. m. macrorhynchos* compared to *C. m. philippinus* (`r martens_contrasts_TA$label[martens_contrasts_TA$gcomp == "philippinus"]`; Fig. \@ref(fig:martContrasts)).
+
+```{r martContrasts, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The contrasts' distributions illustrating the difference between all Martens proposed subspecies. The lines indicate the 95% Highest Density Credible Interval surrouinding the median."}
+knitr::include_graphics(here("Figures", "martSpecies_HDCI_contrasts.png"))
+```
+
+## Exploration of measurements using inverse distance weighted maps
+
+When treated as a single contiguous population, none of the morphometrics assessed singly showed a strong multi-modal distribution (see Fig. \@ref(fig:overallPlot)), instead all revealed a unimodal normal distribution.
+
+When morphometric variation was visualized in the IDW (Inverse Distance Weighted interpolation) maps, we hotspots of multiple measurements were revealed, in Height at Nares (HN), Exposed Culmen (ExCu), Tarsus Length (TaLe), and Proximal Bill Surface Area (PBSA) that centered on Northern Japan, in particular Hokkaido; crows in this region included some of the largest measured specimens.
+Not only did these crow specimens have the largest bills in absolute terms, but the ratio of HN to TaLe as well as PBSA highlighted a tall bill even for their larger overall size (Fig. \@ref(fig:idwMaps)).
+This finding was reinforced by the difference in these measurements between Klockenhoff’s definition of C. m. japonensis and all other subspecies (Fig. \@ref(fig:measuresMap)).
+
+```{r idwMaps, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Maps showing an interpolated inverse distance weighted heatmap of all collected measures and the four combined measures. Thicker contours match the line breakdowns shown on the legends to the right of the maps, three thinner contours exist between each break. For Nares to bill tip:Exposed Culmen (NtBT : ExCu), a higher number means the nares fall closer to the head, a lower number means the nares fall closer to the tip of the bill. Measures were scaled and colored with yellow at the high end of the scale and dark green at the lower end."}
+knitr::include_graphics(here("Figures", "IDWmaps.png"))
+```
+
+# ---------------------------------------------------------
+
+On the other end of the scale, the crows in northern India and Pakistan had some of the smallest bills in measures of width, length, and height.
+They also had comparatively small tarsi compared to most crows outside of this area, suggesting an overall smaller bird.
+However, the ratio of HN to TaLe, as well as the ratio of ExCu to TaLe, suggested that their bills were small even for their size.
+Further emphasizing the small bill to body ratio in northern India and Pakistan was the lack of the same pattern in southern India.
+In southern India crows had among the smallest tarsus measurements, but largely average bill measurements for their size.
+The northern India and Pakistan crows also exhibited another unique characteristic: their nares were located further forward on their bills (a low NtBT:ExCu ratio) compared to C.
+macrorhynchos from other areas.
+
+Conversely, crows in the Philippines had nares that were placed further back on the bill, closer to the forehead.
+The total ExCu in Philippine crows was largely average, but the Nares to Bill Tip (NtBT) measures were among the largest (>40 mm).
+In addition, for their size (i.e., TaLe) they tended to have long bills (i.e., ExCu) with the extra length tending to occur in the distal region of the bill (NtBT).
+Width measures (BBW, SBW, and WN) did not show dramatic differences across the distribution, and largely followed overall patterns of TaLe.
+The separation of C. m. japonensis by Klockenhoff seems to have the strongest support based on our measurements; this was reflected in the Bayesian comparisons (Fig. \@ref(fig:klockContrasts)), as well as visible hotspots in the IDW maps (Fig. \@ref(fig:idwMaps)).
+
+Secondarily, the C. m. philippinus subspecies (defined by both Klockenhoff and Martens et al.), while not showing major differences in the Bayesian comparisons, did appear to show some distinct characteristics in the IDW maps.
+Relationships of morphological measurements to climate factors
+Our exploration of morphological measurements in relation to climatic measures showed several significant relationships between our measurements and mean annual temperature, temperature seasonality, or precipitation, although most explained less than 10% of the variation in measurements (R2 < 0.1) (Supplementary Figures 6-16).
+There were two notable exceptions.
+
+In the ratio NtBT:ExCu (Fig. \@ref(fig:climateComparisonMap_NtBT_ExCu)) we found a positive relationship between annual mean temperature and the NtBT:ExCu ratio (Gradient = 0.0017, R2 = 0.21), meaning as mean annual temperature increased, nares tended to fall more proximally on the bill, away from the tip.
+There was also a significant, negative relationship between seasonality and NtBt:ExCu (Gradient = -4.3e-05, R2 = 0.18) , meaning in areas with more temperature variability throughout the year, nares tended to fall farther forward, towards the tip of the bill.
+
+```{r climateComparisonMap_NtBT_ExCu, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Measures of the ratio of Nares to Bill Tip : Exposed Culmen (NtBT : ExCu) in relation to annual mean temperature, temperature seasonality, and annual precipitation. Lower values are represented by dark green and higher values are represented by yellow."}
+knitr::include_graphics(here("Figures", "climMap_NtBT.ExCu.png"))
+```
+
+In our measure of Proximal Bill Surface Area (PBSA) (Fig. \@ref(fig:climateComparisonMap_PBSA)) we found a negative relationship between annual mean temperature and PBSA relative to body size (Gradient = -0.05, R2= 0.11), meaning in areas with a higher annual mean temperature, crow bills tended to have a smaller surface area near the face.
+We also found a positive relationship between PBSA and temperature seasonality (Gradient = 0.0016, R2 = 0.15) meaning in areas with higher seasonality, proximal bill surface area tended to be larger.
+
+```{r climateComparisonMap_PBSA, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Measures of the ratio of Nares to Bill Tip : Exposed Culmen (NtBT : ExCu) in relation to annual mean temperature, temperature seasonality, and annual precipitation. Lower values are represented by dark green and higher values are represented by yellow."}
+knitr::include_graphics(here("Figures", "climMap_ExCuNtBTxHaNaTaLe.png"))
+```
+
+# Discussion
+
+To characterize the geographic variation in Corvus macrorhynchos morphology, and to test existing subspecies propositions, we measured key morphological characteristics from over 1000 museum specimens.
+Bayesian comparisons of differences revealed no evidence for overall sexual dimorphism, nor any sexual dimorphism within any proposed subspecies.
+
+The biogeography of subspecies proposed by Klockenhoff (1969), and Martens et al.
+(2000) were also largely unsupported by our measures of morphology, with several notable exceptions: Corvus m.
+japonensis as defined by Klockenhoff exhibited larger bills even for their body size than other subspecies, as did C. m. hainanus. 
+Whereas both C. m. intermedius and C. m. osai showed smaller bills than expected for their body size.
+We found very few clear differences in morphology between the Martens et al. groups, with the exception of shorter tarsi (i.e., smaller size) in C. m. philippinus.
+
+We also explored the appearance of areas of phenotypic interest, outside of the previous definitions of subspecies.
+Our explorations revealed Japan, the Philippines, and northern India and Pakistan had the most distinct phenotypes.
+The Japanese crows appeared larger overall and had disproportionately taller bills.
+The northern Indian and Pakistani crows appeared smaller overall and had disproportionately smaller bills with nares positioned closer to the bill tip.
+The Philippine crows also appeared smaller overall and had disproportionately longer bills with nares positioned closer to the forehead.
+Outside of these hotspots, the remainder of the distribution appeared gradated and morphological differences appeared relatively minor.
+
+Factors we could not account for such as adult age, health, diet, and differing maturation rates between sexes may have influenced the degree of sex dimorphism in our samples.
+Therefore, a study aiming to fully examine sex differences within C. macrorhynchos would do well to control for these factors.
+However, the low level of sexual dimorphism in our sample, with males being slightly larger on average, is not particularly unexpected as previous descriptions of this species have indicated males and females are indistinguishable in the field (Whistler 2008).
+This is also a common pattern seen in other Corvus spp. (e.g., C. splendens, C. corone, C. frugilegus, (Madge 2020)).
+Previous studies have suggested lower size dimorphism reflects a lack of intra-sexual competition common in monogamous species, as well as smaller inter-sexual differences in parental care (Owens and Hartley 1998).
+This taken together with field guide descriptions and personal behavioral observations (Chapter 5) suggests that C. macrorhynchos is a socially monogamous species, where both parents care for the young.
+
+While the lack of dimorphism appeared to align with previous assertions regarding C. macrorhynchos, the geographic patterns in morphology did not.
+The majority of subspecies suggested by Klockenhoff did not appear clearly in our data.
+For example, crows on either side of the boundary between culminatus and intermedius were similar in all measures.
+In addition, Klockenhoff suggested four distinct subspecies in southeast Asia, where neither the Bayesian comparison nor IDW maps of our data revealed any clear evidence of morphometric boundaries in this region.
+It is worth noting that Klockenhoff’s boundaries were based on the differences in feather parasites.
+These parasites may have been subject to different environmental pressures or limited in their ability to travel between hosts.
+This could render a disconnect between the physical characteristics of the crows and the species makeup of these parasites.
+Martens et al.’s subspecies had a large east to west distribution, particularly their “C. m. japonensis” designation which covers Japan to Afghanistan and encompassed both the largest and smallest crows that we measured.
+Therefore, comparing morphometric measures between their japonensis and any other subspecies resulted in a near complete overlap.
+Martens et al.’s splits were based on call structure, with field data conducted in only three locations.
+As such, they may have missed key boundaries existing with their larger definitions.
+For example, we highlighted the distinctly larger crows of Japan and smaller crows of the Philippines, while Martens et al. did not sample any of the island populations.
+A proper comparison of the morphometrics to call structure would require more extensive sampling of crow calls across C. macrorhynchos’ distribution.
+
+The larger size of tarsus and bill of C. macrorhynchos in Japan may have several different explanations.
+Our largest measures were centered around Hokkaido, which is near the northernmost edge of the crows’ distribution.
+These crows were not only larger in most measures but also had taller bills in relation to their bodies.
+A tall bill could be a result of sexual selection, but this seems unlikely, because male and female measurements were very similar.
+Bergmann’s rule suggests that the crows might be bigger here to deal with the colder temperatures, and a taller bill might also provide a physiological advantage, perhaps warming inspired air in this environment (Geist 2000).
+When plotting Height at Nares (HN) against climatic measures, we found a significant but weak negative relationship between HN and mean annual temperature (Supplementary Figure 12).
+This may be due to the overall smaller measurements of crows in the Himalayas, which included the lowest mean annual temperatures.
+We found a stronger positive relationship between HN and temperature seasonality which suggests temperature variability might have more of an impact on bill height than the annual average temperature.
+Tarsus Length (TaLe) followed a similar, albeit weaker, pattern to bill height, with a weak negative relationship between TaLe and annual mean temperature and a slightly stronger positive relationship between TaLe and seasonality (Supplementary Figure 14).
+This suggests that overall body size might be marginally affected by temperature and seasonality, but it is not likely a major driver.
+
+Another morphological pattern to consider is the placement of the nares.
+The strongest relationship found was the negative relationship between the Nares to Bill Tip : Exposed Culmen (NtBT : ExCu) ratio and annual mean temperature (Fig. \@ref(fig:climateComparisonMap_NtBT_ExCu)).
+This showed that in areas with higher annual mean temperatures, nares tended to fall closer to the base of the bill, while in areas with lower mean annual temperatures, the nares tended to fall closer to the tip.
+We also found a positive relationship between temperature seasonality and NtBT : ExCu ratio, meaning that higher seasonal temperature variability correlated with nares being closer to the tip of the bill.
+It is possible that this may be an adaptation for cold climates, where a longer nasal passage would allow air temperature to be regulated in the bill before reaching the body (Geist 2000).
+
+It is important to note that these measures of morphology do not encompass all aspects of C. macrorhynchos’ phenotypic variation, and more evidence is needed to identify areas of divergence or subspecies delineations.
+To uncover population level variation that would suggest species-level splits, we would need to perform genetic analysis across the species distribution.
+However, the results of our exploration did highlight areas such as the Philippines, the Himalayas, and Northern Japan, that would benefit from further investigation via genetic sampling, vocal analysis, or additional morphometrics.
+Future studies should focus on these morphological “hotspots” as potential areas of divergence.
+
+# Acknowledgements
+
+## Data and code availability
+
+## Author contributions
+
+## Competing interests
+
+## Funding
+
+# References
+
