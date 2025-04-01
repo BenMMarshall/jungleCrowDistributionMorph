@@ -321,8 +321,6 @@ This finding was reinforced by the difference in these measurements between Kloc
 knitr::include_graphics(here("Figures", "IDWmaps.png"))
 ```
 
-# ---------------------------------------------------------
-
 On the other end of the scale, the crows in northern India and Pakistan had some of the smallest bills in measures of width, length, and height.
 They also had comparatively small tarsi compared to most crows outside of this area, suggesting an overall smaller bird.
 However, the ratio of HN to TaLe, as well as the ratio of ExCu to TaLe, suggested that their bills were small even for their size.
@@ -335,26 +333,57 @@ Conversely, crows in the Philippines had nares that were placed further back on 
 The total ExCu in Philippine crows was largely average, but the Nares to Bill Tip (NtBT) measures were among the largest (>40 mm).
 In addition, for their size (i.e., TaLe) they tended to have long bills (i.e., ExCu) with the extra length tending to occur in the distal region of the bill (NtBT).
 Width measures (BBW, SBW, and WN) did not show dramatic differences across the distribution, and largely followed overall patterns of TaLe.
-The separation of C. m. japonensis by Klockenhoff seems to have the strongest support based on our measurements; this was reflected in the Bayesian comparisons (Fig. \@ref(fig:klockContrasts)), as well as visible hotspots in the IDW maps (Fig. \@ref(fig:idwMaps)).
+The separation of *C. m. japonensis* by Klockenhoff seems to have the strongest support based on our measurements; this was reflected in the Bayesian comparisons (Fig. \@ref(fig:klockContrasts)), as well as visible hotspots in the IDW maps (Fig. \@ref(fig:idwMaps)).
 
-Secondarily, the C. m. philippinus subspecies (defined by both Klockenhoff and Martens et al.), while not showing major differences in the Bayesian comparisons, did appear to show some distinct characteristics in the IDW maps.
-Relationships of morphological measurements to climate factors
-Our exploration of morphological measurements in relation to climatic measures showed several significant relationships between our measurements and mean annual temperature, temperature seasonality, or precipitation, although most explained less than 10% of the variation in measurements (R2 < 0.1) (Supplementary Figures 6-16).
+Secondarily, the *C. m. philippinus* subspecies (defined by both Klockenhoff and Martens et al.), while not showing major differences in the Bayesian comparisons, did appear to show some distinct characteristics in the IDW maps.
+
+```{r climateSummary, echo=FALSE, message=FALSE, warning=FALSE}
+
+targets::tar_load("clim_map_list_NtBT.ExCu", store = here("_targets"))
+
+climateCoef_NtBT.ExCu <- clim_map_list_NtBT.ExCu[[2]]
+
+NtBT.ExCu_temp_inText <- paste0("(Gradient = ", 
+                                signif(climateCoef_NtBT.ExCu$.value[climateCoef_NtBT.ExCu$.variable == "b_bio_temper"], digits = 2),
+                                ", R^2 = ",
+                                signif(clim_map_list_NtBT.ExCu[[3]], digits = 2))
+
+NtBT.ExCu_seas_inText <- paste0("(Gradient = ", 
+                                signif(climateCoef_NtBT.ExCu$.value[climateCoef_NtBT.ExCu$.variable == "b_bio_season"], digits = 2),")")
+
+targets::tar_load("clim_map_list_ExCuNtBTxHaNaTaLe", store = here("_targets"))
+
+climateCoef_ExCuNtBTxHaNaTaLe <- clim_map_list_ExCuNtBTxHaNaTaLe[[2]]
+
+ExCuNtBTxHaNaTaLe_temp_inText <- paste0("(Gradient = ", signif(climateCoef_ExCuNtBTxHaNaTaLe$.value[climateCoef_ExCuNtBTxHaNaTaLe$.variable == "b_bio_temper"], digits = 2),
+                                        ", R^2 = ",
+                                        signif(clim_map_list_ExCuNtBTxHaNaTaLe[[3]], digits = 2))
+
+ExCuNtBTxHaNaTaLe_seas_inText <- paste0("(Gradient = ", signif(climateCoef_ExCuNtBTxHaNaTaLe$.value[climateCoef_ExCuNtBTxHaNaTaLe$.variable == "b_bio_season"], digits = 2), ")")
+
+```
+
+
+## Relationships of morphological measurements to climate factors
+
+Our exploration of morphological measurements in relation to climatic measures showed several significant relationships between our measurements and mean annual temperature, temperature seasonality, or precipitation, although most explained less than 10% of the variation in measurements (R2 < 0.1) <!-- (Supplementary Figures 6-16) -->.
 There were two notable exceptions.
 
-In the ratio NtBT:ExCu (Fig. \@ref(fig:climateComparisonMap_NtBT_ExCu)) we found a positive relationship between annual mean temperature and the NtBT:ExCu ratio (Gradient = 0.0017, R2 = 0.21), meaning as mean annual temperature increased, nares tended to fall more proximally on the bill, away from the tip.
-There was also a significant, negative relationship between seasonality and NtBt:ExCu (Gradient = -4.3e-05, R2 = 0.18) , meaning in areas with more temperature variability throughout the year, nares tended to fall farther forward, towards the tip of the bill.
+In the ratio NtBT:ExCu (Fig. \@ref(fig:climateComparisonMap_NtBT_ExCu)) we found a positive relationship between annual mean temperature and the NtBT:ExCu ratio `r NtBT.ExCu_temp_inText`, meaning as mean annual temperature increased, nares tended to fall more proximally on the bill, away from the tip.
+There was also a significant, negative relationship between seasonality and NtBt:ExCu `r NtBT.ExCu_seas_inText`, meaning in areas with more temperature variability throughout the year, nares tended to fall farther forward, towards the tip of the bill.
 
 ```{r climateComparisonMap_NtBT_ExCu, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Measures of the ratio of Nares to Bill Tip : Exposed Culmen (NtBT : ExCu) in relation to annual mean temperature, temperature seasonality, and annual precipitation. Lower values are represented by dark green and higher values are represented by yellow."}
 knitr::include_graphics(here("Figures", "climMap_NtBT.ExCu.png"))
 ```
 
-In our measure of Proximal Bill Surface Area (PBSA) (Fig. \@ref(fig:climateComparisonMap_PBSA)) we found a negative relationship between annual mean temperature and PBSA relative to body size (Gradient = -0.05, R2= 0.11), meaning in areas with a higher annual mean temperature, crow bills tended to have a smaller surface area near the face.
-We also found a positive relationship between PBSA and temperature seasonality (Gradient = 0.0016, R2 = 0.15) meaning in areas with higher seasonality, proximal bill surface area tended to be larger.
+In our measure of Proximal Bill Surface Area (PBSA) (Fig. \@ref(fig:climateComparisonMap_PBSA)) we found a negative relationship between annual mean temperature and PBSA relative to body size `r ExCuNtBTxHaNaTaLe_temp_inText`, meaning in areas with a higher annual mean temperature, crow bills tended to have a smaller surface area near the face.
+We also found a positive relationship between PBSA and temperature seasonality `r ExCuNtBTxHaNaTaLe_seas_inText` meaning in areas with higher seasonality, proximal bill surface area tended to be larger.
 
 ```{r climateComparisonMap_PBSA, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Measures of the ratio of Nares to Bill Tip : Exposed Culmen (NtBT : ExCu) in relation to annual mean temperature, temperature seasonality, and annual precipitation. Lower values are represented by dark green and higher values are represented by yellow."}
 knitr::include_graphics(here("Figures", "climMap_ExCuNtBTxHaNaTaLe.png"))
 ```
+
+# ---------------------------------------------------------
 
 # Discussion
 
