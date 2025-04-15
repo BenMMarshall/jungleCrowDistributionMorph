@@ -277,6 +277,10 @@ contrastsCombined <- list(
 
 resultsOutput <- list(
   tar_target(
+    name = package_text,
+    command = create_package_txt(excludes = c("roxygen2"))
+  ),
+  tar_target(
     name = results_output,
     command = render_rmd(measurement_summary,
                          overall_summary_plot,
@@ -286,8 +290,10 @@ resultsOutput <- list(
                          contrasts_hdciSubspecies_plots,
                          contrasts_hdciIntraSex_plots,
                          contrasts_hdciSex_plots,
-                         clim_map_list
+                         clim_map_list,
+                         package_text
     ),
+    cue = tar_cue(mode = "always"),
     priority = 0.001
     # creates pdf/word/html output of the results
   )

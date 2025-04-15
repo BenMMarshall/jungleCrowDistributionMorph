@@ -8,7 +8,7 @@
 render_rmd <- function(...){
 
   rmarkdown::render(input = here::here("Manuscript",
-                                       "morphologicalDifferences.Rmd"),
+                                       "crowMorphology.Rmd"),
                     output_file = here::here("Manuscript",
-                                             "morphologicalDifferences.html"))
+                                             "crowMorphology.pdf"))
 }
