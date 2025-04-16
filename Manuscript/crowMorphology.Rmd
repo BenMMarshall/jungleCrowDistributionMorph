@@ -510,7 +510,7 @@ knitr::include_graphics(here("Figures", "climMap_ExCuNtBTxHaNaTaLe.png"))
 To characterize the geographic variation in *Corvus macrorhynchos* morphology, and to test existing subspecies propositions, we measured key morphological characteristics from over 1000 museum specimens.
 Bayesian comparisons of differences revealed no evidence for overall sexual dimorphism, nor any sexual dimorphism within any proposed subspecies.
 
-The biogeography of subspecies proposed by @klockenhoff_zur_1969, and @martens_calls_2000 were also largely unsupported by our measures of morphology, with several notable exceptions: *Corvus m. japonensis* as defined by Klockenhoff exhibited larger bills even for their body size than other subspecies, as did *C. m. hainanus*. 
+The biogeography of subspecies proposed by @klockenhoff_zur_1969, and @martens_calls_2000 were also largely not reflected in our measures of morphology, with several notable exceptions: *Corvus m. japonensis* as defined by Klockenhoff exhibited larger bills even for their body size than other subspecies, as did *C. m. hainanus*. 
 Whereas both *C. m. intermedius* and *C. m. osai* showed smaller bills than expected for their body size.
 We found very few clear differences in morphology between the Martens et al. groups, with the exception of shorter tarsi (i.e., smaller size) in *C. m. philippinus*.
 
@@ -521,7 +521,7 @@ The northern Indian and Pakistani crows appeared smaller overall and had disprop
 The Philippine crows also appeared smaller overall and had disproportionately longer bills with nares positioned closer to the forehead.
 Outside of these hotspots, the remainder of the distribution appeared gradated and morphological differences appeared relatively minor.
 
-Factors we could not account for such as adult age, health, diet, and differing maturation rates between sexes may have influenced the degree of sex dimorphism in our samples.
+Factors we could not account for such as adult age, health, diet, and differing maturation rates between sexes may have influenced crow size <!-- CITES HERE -->, and the degree of sex dimorphism in our samples.
 Therefore, a study aiming to fully examine sex differences within *C. macrorhynchos* would do well to control for these factors.
 However, the low level of sexual dimorphism in our sample, with males being slightly larger on average, is not particularly unexpected as previous descriptions of this species have indicated males and females are indistinguishable in the field [@whistler_popular_2008].
 This is also a common pattern seen in other *Corvus spp.* [e.g., *C. splendens*, *C. corone*, *C. frugilegus*; @billerman_large-billed_2020].
@@ -532,7 +532,7 @@ While the lack of dimorphism appeared to align with previous assertions regardin
 The majority of subspecies suggested by Klockenhoff did not appear clearly in our data.
 For example, crows on either side of the boundary between *culminatus* and *intermedius* were similar in all measures.
 In addition, Klockenhoff suggested four distinct subspecies in southeast Asia, where neither the Bayesian comparison nor IDW maps of our data revealed any clear evidence of morphometric boundaries in this region.
-It is worth noting that Klockenhoff's boundaries were based on the differences in feather parasites.
+Klockenhoff's boundaries were based on the differences in feather parasites.
 These parasites may have been subject to different environmental pressures or limited in their ability to travel between hosts.
 This could render a disconnect between the physical characteristics of the crows and the species make-up of these parasites.
 Martens et al.'s subspecies had a large east to west distribution, particularly their *C. m. japonensis* designation which covers Japan to Afghanistan and encompassed both the largest and smallest crows that we measured.
@@ -540,7 +540,7 @@ Therefore, comparing morphometric measures between their *japonensis* and any ot
 Martens et al.'s splits were based on call structure, with field data conducted in only three locations.
 As such, they may have missed key boundaries existing with their larger definitions.
 For example, we highlighted the distinctly larger crows of Japan and smaller crows of the Philippines, while Martens et al. did not sample any of the island populations.
-A proper comparison of the morphometrics to call structure would require more extensive sampling of crow calls across *C. macrorhynchos*' distribution.
+A fuller comparison of the morphometrics to call structure would require more extensive sampling of crow calls across *C. macrorhynchos*' distribution.
 
 The larger size of tarsus and bill of *C. macrorhynchos* in Japan may have several different explanations.
 Our largest measures were centred around Hokkaido, which is near the northernmost edge of the crows' distribution.
@@ -551,7 +551,7 @@ When plotting Height at Nares (HN) against climatic measures, we found a signifi
 This may be due to the overall smaller measurements of crows in the Himalayas, which included the lowest mean annual temperatures.
 We found a stronger positive relationship between HN and temperature seasonality which suggests temperature variability might have more of an impact on bill height than the annual average temperature.
 Tarsus Length (TaLe) followed a similar, albeit weaker, pattern to bill height, with a weak negative relationship between TaLe and annual mean temperature and a slightly stronger positive relationship between TaLe and seasonality (Supplementary Figure 14)<!-- SUPP FIGURE -->.
-This suggests that overall body size might be marginally affected by temperature and seasonality, but it is not likely a major driver.
+This suggests that overall body size might be marginally affected by temperature and seasonality, but it is likely not a major driver.
 
 Another morphological pattern to consider is the placement of the nares.
 The strongest relationship found was the negative relationship between the Nares to Bill Tip : Exposed Culmen (NtBT : ExCu) ratio and annual mean temperature (Fig. \@ref(fig:climateComparisonMapNtBTExCu)).
@@ -560,8 +560,8 @@ We also found a positive relationship between temperature seasonality and NtBT :
 It is possible that this may be an adaptation for cold climates, where a longer nasal passage would allow air temperature to be regulated in the bill before reaching the body [@geist_nasal_2000].
 
 It is important to note that these measures of morphology do not encompass all aspects of *C. macrorhynchos*' phenotypic variation, and more evidence is needed to identify areas of divergence or subspecies delineations.
-To uncover population level variation that would suggest species-level splits, we would need to perform genetic analysis across the species distribution.
-However, the results of our exploration did highlight areas such as the Philippines, the Himalayas, and Northern Japan, that would benefit from further investigation via genetic sampling, vocal analysis, or additional morphometrics.
+To uncover population level variation that would suggest species-level splits, genetic analysis across the species distribution would be required.
+However, the results of our exploration highlight areas such as the Philippines, the Himalayas, and Northern Japan, that would benefit from targeted investigation via genetic sampling, vocal analysis, or additional morphometrics.
 Future studies should focus on these morphological "hotspots" as potential areas of divergence.
 
 # Acknowledgements
