@@ -101,7 +101,6 @@ corePipeline <- list(
     name = subspecies_list,
     command = read_subspecies_polygons(),
     priority = 0.7
-    #pull in measurement data and removes JUVENILES
   ),
   tar_target(
     name = measurement_summary,
