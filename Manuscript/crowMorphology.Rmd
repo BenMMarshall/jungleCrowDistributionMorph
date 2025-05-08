@@ -21,7 +21,7 @@ csl: peerj.csl
 editor_options: 
   markdown: 
     wrap: sentence
-abstract: abstract text
+abstract: Examinations of morphology can reveal a species' relationship with the environment and their evolutionary trajectory. Particularly pronounced difference can hint at specific selection pressures, and reveal hitherto unknown species. Cryptic species, with only subtle morphological differences, are widespread and ignoring them risks underestimating biodiversity and their threatened status. Recently several prominent examples of splits of widespread species complex have occurred in Asia. We turned our attention to the Jungle Crow (*Corvus macrorhynchos*), who has been the subject of taxonomic debate for over a century. Using museums specimens, sourced from across their distribution, we used standardised photography to measured the hard tissue morphology of over 1,000 *Corvus macrorhynchos*. We examined how these hard tissue measures compared to two previously proposed subspecies delineations. We revealed that most boundaries are not visible in the hard tissue measures, with *Corvus macrorhynchos phillipinus* being a notable exception. In general, hard tissues only exhibit small differences across the distribution. However, spatial exploration of these data highlighted several areas exhibited unique morphology, namely Japan, Northern India, and the Philippines. We explored several climatic explanations for these patterns, which highlighted a potential association between temperature and the form of the bill. The limited variation may be suggest that Jungle Crows are adapting locally and flexibly through behaviour, rather than via major morphological change. Therefore, subspecies definitions may be more visible in other phenotypic traits, or only detectable via genetic methods. The conspicuous morphology of *Corvus macrorhynchos* Japan, Northern India, and the Philippines warrants further comparative investigation to determine potential drivers.
 keywords: jungle crow, Corvus macrorhynchos, morphology, biogeography, species complex, museum specimens, Corvidae
 ---
 
@@ -557,6 +557,10 @@ Future studies should focus on these morphological "hotspots" as potential areas
 # Acknowledgements
 
 ## Data and code availability
+
+All data is available with associated data paper [@alamshah_distribution-wide_2025] providing a full description of the data and collection method.
+Data DOI: 10.5281/zenodo.12788353
+Direct URL: https://zenodo.org/records/12788353
 
 ```{r packageText, child="packageParagraph.txt", eval=TRUE}
 

@@ -1,5 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|b7e6d72dc3c7ee16|||||||||||||||
+.Random.seed|object|b3d4fa8fe8350ab4|||||||||||||||
 bayesian_comparison_klockSpecies_Bill.base.length|stem|95bdc77a8c71c31e|95e7cc6ab94f49fb|b68ce1cebb2ee8b4|2042634294||t20122.7037829771s|6e44fb2b196f0193|4139393|qs|local|vector|||46.375|Rows containing NAs were excluded from the model.|
 bayesian_comparison_klockSpecies_Bill.base.width|stem|f115bff16e9756d6|3a18b6618f927d97|b68ce1cebb2ee8b4|1761105669||t20122.6977246239s|c672ee1041826086|4115975|qs|local|vector|||48.016|Rows containing NAs were excluded from the model.|
 bayesian_comparison_klockSpecies_Bill.width.at.skin.border|stem|3d06c2f3b18abc01|feeee2ebecfc2ad9|b68ce1cebb2ee8b4|-2085957028||t20122.7049432142s|c0029020cb773d64|4221761|qs|local|vector|||43.516|Rows containing NAs were excluded from the model.|
@@ -206,7 +206,7 @@ r2_values_martSpecies_Width.at.nares|stem|06b9731f890bea37|f8514cfacbf7dba5|b04e
 read_crow_data|function|52bccf72d6eab492|||||||||||||||
 read_subspecies_polygons|function|f92d01816010206e|||||||||||||||
 render_rmd|function|59c351482d39df7e|||||||||||||||
-results_output|stem|7ea292e53e5a3ee8|033bc5ec257e517e|33e9e2d6d40c29d4|1992464557||t20193.8691583105s|f7afdd1d5b8b7ee0|139|qs|local|vector|||15.235|package terra was built under R version 4.4.3. Package xcolor Warning Package option usenames is obsolete and ignored on input line 265.. Package xcolor Warning Package option usenames is obsolete and ignored on input line 265.. LaTeX Warning Reference figsexContrasts on page 4 undefined on input line 208.. LaTeX Warning Reference figsexKlockContrasts on page 5 undefined on input line 211.. LaTeX Warning Reference figsexKlockContrasts on page 5 undefined on input line 217.. LaTeX Warning Reference figsexMartensContrasts on page 5 undefined on input line 223.. LaTeX Warning Reference figmeasuresMap on page 7 undefined on input line 289.. LaTeX Warning There were undefined references.|
+results_output|stem|7ea292e53e5a3ee8|033bc5ec257e517e|33e9e2d6d40c29d4|1992464557||t20216.4624147838s|f7afdd1d5b8b7ee0|139|qs|local|vector|||18.11|package terra was built under R version 4.4.3. Package xcolor Warning Package option usenames is obsolete and ignored on input line 265.. Package xcolor Warning Package option usenames is obsolete and ignored on input line 265.|
 resultsOutput|object|785df33c903465cd|||||||||||||||
 save_betas_values|function|6e0102c2c1e3b5b5|||||||||||||||
 save_r2_values|function|44cc0b8a9a39d963|||||||||||||||
