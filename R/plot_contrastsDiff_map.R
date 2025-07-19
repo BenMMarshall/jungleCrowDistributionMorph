@@ -325,8 +325,17 @@ plot_contrastsDiff_map <- function(contrastsHDCI,
       group_by(alphaComp) %>%
       slice_head(n = 1) %>%
       left_join(conDiffers)
-
+    
+    map <- map_data("world")
+    
+    sfMap <- map %>%
+      st_as_sf(coords = c("long", "lat"), crs = st_crs(klock)) %>%
+      group_by(group) %>%
+      summarise(geometry = st_combine(geometry)) %>%
+      st_cast("POLYGON")
+    
     adjacentDiffPlot <- ggplot() +
+      geom_sf(data = sfMap, fill = "grey99", colour = "grey75") +
       geom_segment(data = segmentDataPlot,
                    aes(x = Xcomp, xend = Xbase,
                        y = Ycomp, yend = Ybase,

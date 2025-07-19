@@ -162,6 +162,11 @@ This is an area thought to be important for thermoregulation (\citeproc{ref-tatt
 In order to explore how patterns of morphological variation in the dataset corresponded to the proposed subspecies divisions of Klockenhoff (\citeproc{ref-klockenhoff_zur_1969}{1969}), and Martens (\citeproc{ref-martens_calls_2000}{2000}), we took their maps (Figures 2 and 4 in the respective papers) and used QGIS' georeferencing function to convert the figure images to geospatial polygons (\citeproc{ref-QGIS_software}{QGIS Development Team, 2024}).
 For Klockenhoff's map, we used coastal and inland landmarks as georeferences; for Martens et al.'s map, we used the provided latitude and longitude scales.
 Using the geospatial polygons created from these maps, we then assigned two subspecies identities (one by Klockenhoff's divisions, one by Martens' divisions) to our measured specimens by comparing latitude and longitude locations.
+Our sample of specimens included representatives from all proposed groupings from both studies (Fig. \ref{fig:subspeciesPlots}).
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{../Figures/combined Subspecies Plot} \caption{The locations of origin for all museum specimens[.] measured in this study plotted on the proposed subspecies separations from a) Klockenhoff (1969) and b) Martens et al. (2000). Klockenhoff described 12 subspecies and 3 hybrid zones (denoted by the lighter shaded colours). Martens described 4 subspecies and two hybrid zones denoted by the grey shaded areas.}\label{fig:subspeciesPlots}
+\end{figure}
 
 We used a suite of Bayesian models to examine whether the group assignment (subspecies as identified by Klockenhoff or Martens et al.~and sex) could predict the values derived from the photographs and the four ratios based on combined measures.
 The models had the formula: \(\mu\) \textasciitilde{} 0 + group:sex, \(\sigma\) \textasciitilde{} 0 + group:sex
@@ -215,26 +220,13 @@ The distribution for each sex overlaps heavily regardless of measure, with femal
 This lack of difference is reflected in the Bayesian Regression Model, where the resulting distributions of contrasts entirely overlap and are largely centred on zero (Fig. \ref{fig:sexContrasts}).
 The contrasts suggest a lack of sexual dimorphism in these measures when examined on an overall species level.
 
-The only exceptions exist in Klockenhoff's definition of \emph{C. m. culminatus}, \emph{C. m. hainanus}, and the hybrid zones \emph{lev. x mac.} and \emph{tib. x lev.} (Fig. \ref{fig:sexKlockContrasts}).
-\emph{C. m. culminatus} -4.42mm, 95\% HDCI -11.5 to 2.63, 89.53\%, \emph{hainanus} -5.31mm, 95\% HDCI -13.51 to 2.84, 91.21\%, and \emph{levaillantii x macrorhynchos} saw differences in exposed culmen, whereas \emph{levaillantii x tibetosinensis} only showed a difference in bill base length .
-\emph{C. m. hainanus} additionally showed a difference in height at nares -5.31mm, 95\% HDCI -13.51 to 2.84, 91.21\%.
-All suggesting that females tend to be smaller in these measures.
+The only exceptions exist in Klockenhoff's definition of \emph{C. m. culminatus}, \emph{C. m. hainanus}, and the hybrid zone \emph{tib. x lev.} (Fig. \ref{fig:sexKlockContrasts}).
+In these case of \emph{C. m. culminatus} and \emph{hainanus} females had smaller Exposed Culmens (\emph{C. m. culminatus} -4.42mm, 95\% HDCI -11.5 to 2.63, 89.53\% probability of a positive non-zero difference; \emph{C. m. hainanus} -5.31mm, 95\% HDCI -13.51 to 2.84, 91.21\%).
+\emph{Corvus macrorhynchos hainanus} additionally showed a difference in Height at Nares -5.31mm, 95\% HDCI -13.51 to 2.84, 91.21\%.
+The only other instance of a \textgreater85\% difference was \emph{C. m. levaillantii x tibetosinensis} bill base lengths -3.01mm, 95\% HDCI -9.27 to 3.23, 85.85\%.
+Overall this suggest that females are largely the same across in each of Klockenhoff's subspecies.
 
-On an intra-group level, Klockenhoff's groupings also showed little difference between sexes for the majority of measures.
-The only exceptions exist in Klockenhoff's definition of \emph{C. m. culminatus}, \emph{C. m. hainanus}, and the hybrid zones \emph{levaillantii} x \emph{macrorhynchos} and \emph{tibetosinensis} x \emph{levaillantii} (Fig. \ref{fig:sexKlockContrasts}).
-
-\emph{Corvus macrorhynchos culminatus}, \emph{hainanus} and \emph{levaillantii} x \emph{macrorhynchos} showed differences in Exposed Culmen, whereas \emph{levaillantii} x \emph{tibetosinensis} only showed a difference in Bill Base Length.
-\emph{Corvus macrorhynchos hainanus} additionally showed a difference in Height at Nares.
-All of these suggest that females tend to be smaller in these measures.
-
-Martens et al's groupings showed very little difference between sexes (Fig. \ref{fig:sexMartensContrasts}).
-
-We plotted the locations of the specimens against the proposed subspecies maps of Klockenhoff and of Martens et al., allowing us to assign each specimen a subspecies under each proposition.
-Our sample of specimens included representatives from all proposed groupings from both studies (Fig. \ref{fig:subspeciesPlots}).
-
-\begin{figure}
-\includegraphics[width=0.9\linewidth]{../Figures/combined Subspecies Plot} \caption{The locations of origin for all museum specimens[.] measured in this study plotted on the proposed subspecies separations from a) Klockenhoff (1969) and b) Martens (2000). Klockenhoff described 12 subspecies and 3 hybrid zones (denoted by the lighter shaded colours). Martens described 4 subspecies and two hybrid zones denoted by the grey shaded areas.}\label{fig:subspeciesPlots}
-\end{figure}
+Martens et al.'s groupings showed very little difference between sexes (Fig. \ref{fig:sexMartensContrasts}); and mirrored the findings that overall broad assessments of sexual dimorphism are not immediately apparent in this dataset.
 
 \begin{figure}
 \includegraphics[width=0.9\linewidth]{../Figures/combined Subspecies Difference Plot} \caption{Number of measures (direct and composite) with significant differences between adjacent subspecies, using either Klockenhoff (1969) or Martens et al. (2000) subspecies boundaries. The number inside the line, along with line thickness and brightness, indicates a greater number of measures with an 85\% or higher chance of being different. Grey lines indicate that no measures between the two subspecies had >85\% chance of being different. Each subspecies is a different colour which corresponds to its map colour in Figure 2. Lines connect subspecies to their geographic neighbours. Gray dots on the Klockenhoff panel indicate hybrid zones.}\label{fig:countOfDifferencesPlot}
@@ -248,19 +240,19 @@ Such overlap would render identification of subspecies by physical markers diffi
 
 There were several notable exceptions where a subspecies recognized by Klockenhoff stood out biometrically in our data set.
 The strongest of these exceptions was \emph{C. m. japonensis}.
-Compared to many other subspecies from Klockenhoff, \emph{C. m. japonensis} consistently showed larger bill measurements, particularly in Height at Nares and Exposed Culmen (Fig. \ref{fig:klockContrasts}).
-For Height at Nares, the predicted distribution showed less than 1\% overlap with the predicted distribution of other subspecies (philippinus, culminatus, intermedius, osai, culminatus, intermedius), indicating near complete separation.
+Compared to many other subspecies from Klockenhoff, \emph{C. m. japonensis} consistently showed larger bill measurements, particularly in height at nares and exposed culmen (Fig. \ref{fig:klockContrasts}).
+For Height at Nares, the predicted distribution showed less than 1\% overlap with the predicted distribution of other subspecies (philippinus, culminatus, intermedius, osai, culminatus, and intermedius), indicating near complete separation.
 In these cases, the average median contrast (i.e., difference) was 5.8mm.
-For Exposed Culmen, the subspecies philippinus, culminatus, intermedius, osai, culminatus, intermedius had less than 5\% overlap with the predicted distribution of \emph{C. m. japonensis}.
+For Exposed Culmen, the subspecies philippinus, culminatus, intermedius, osai, culminatus, and intermedius had less than 5\% overlap with the predicted distribution of \emph{C. m. japonensis}.
 The average median contrast in this case is 9.92mm.
 Other measures of \emph{C. m. japonensis} showed similar patterns, but less consistently and less dramatically.
-Compared to its mainland neighbour \emph{mandshuricus}, height at nares (median contrast = 3.75mm, 95\% HDCI -1.78 to 9.35, 91.89\% probability of a no zero difference) and exposed culmen (6.84mm, 95\% HDCI -4.58 to 18.2, 88.98\%) also stand out as the most different.
+Compared to its mainland neighbour \emph{mandshuricus}, height at nares (median contrast = 3.75mm, 95\% HDCI -1.78 to 9.35, 91.89\% probability of a positive non-zero difference) and exposed culmen (6.84mm, 95\% HDCI -4.58 to 18.2, 88.98\%) also stand out as the most different.
 
 Another exception is \emph{C. m. hainanus}.
 Similar to \emph{C. m. japonensis}, height at nares stands out as lager than most other subspecies (average median contrast is 2.07mm).
 In addition, measures of width at skin border and bill base length are also regularly larger than other subspecies (average median contrast for width at skin border 1.78mm; bill base length 3.46mm).
 \emph{Corvus macrorhynchos japonensis} is the only subspecies to have any considerably larger measure than \emph{C. m. hainanus} (Height at nares).
-However, compared to its near neighbour (\emph{C. m. colonorum}) it appears more similar than different.
+However, compared to its near neighbour (\emph{C. m. colonorum}) it appears more similar than different (Fig. \ref{fig:klockContrasts}).
 Only bill base length is shows a sizeable non-overlap in distributions (3.7mm, 95\% HDCI -2.35 to 9.91, 89.84\%).
 
 In contrast to the larger forms of \emph{japonensis} and \emph{hainanus}, \emph{intermidis} shows a pattern of smaller bill measurements, in particular width at nares (average median contrast: -4.12), and nares to bill tip (-1.52).
@@ -269,22 +261,24 @@ However, compared with its neighbours (\emph{culminatus} and \emph{tibetosinensi
 Another subspecies that shows a pattern of smaller bill measurements is \emph{C. m. osai}.
 It has considerably smaller measures of width at nares than 11 subspecies (3.31 mm), smaller measures of height at nares than 9 subspecies (3.43 mm), and smaller width at skin border than 8 subspecies (1.88 mm).
 \emph{Corvus macrorhynchos osai} exists on a small island chain, neighbouring \emph{connectens} to its north east and \emph{colonorum} to its west.
-It shows smaller measures in width (connectens: -2.29mm, 95\% HDCI -7.09 to 2.23, 13.09\%; colonorum: -2.93mm, 95\% HDCI -7.21 to 1.52, 8.06\%) and height at nares (connectens: -2.09mm, 95\% HDCI -6.13 to 2.06, 14.14\%; colonorum: -3.07mm, 95\% HDCI -7.17 to 1.29, 7.89\%), as well as width at skin border (connectens: -1.42mm, 95\% HDCI -4.25 to 1.69, 16.72\%; colonorum: -1.77mm, 95\% HDCI -4.22 to 0.69, 7.09\%) than both its nearest neighbours.
+It shows smaller measures in width (connectens: -2.29mm, 95\% HDCI -7.09 to 2.23, 13.09\% probability of a positive non-zero difference; colonorum: -2.93mm, 95\% HDCI -7.21 to 1.52, 8.06\%) and height at nares (connectens: -2.09mm, 95\% HDCI -6.13 to 2.06, 14.14\%; colonorum: -3.07mm, 95\% HDCI -7.17 to 1.29, 7.89\%), as well as width at skin border (connectens: -1.42mm, 95\% HDCI -4.25 to 1.69, 16.72\%; colonorum: -1.77mm, 95\% HDCI -4.22 to 0.69, 7.09\%) than both its nearest neighbours.
 
-Outside of these two larger subspecies, and two smaller, all other proposed subspecies appeared to be statistically similar in most measures and not clearly separable as distinct subspecies on the basis of morphometrics.
+Outside of these two larger subspecies, and two smaller, all other proposed subspecies appeared to be similar in most measures and not clearly separable as distinct subspecies on the basis of morphometrics.
 
 \subsection{Assessing call-based subspecies proposal (Martens et al.~model)}\label{assessing-call-based-subspecies-proposal-martens-et-al.-model}
 
 Compared to Klockenhoff, the comparisons between Martens' proposed subspecies reveal fewer differences (Fig. \ref{fig:martContrasts}).
 Partly because there are dramatically fewer subspecies, but mainly because much of the variation occurs within the large subspecies divisions.
-The only measure that appears to differ between subspecies is tarsus length, which is larger in \emph{C. m. macrorhynchos} compared to \emph{C. m. philippinus} (4.48mm, 95\% HDCI -3.64 to 12.55, 86.57\%; Fig. \ref{fig:martContrasts}).
+Only two measure that appears to differ between subspecies.
+Tarsus length is larger in \emph{C. m. macrorhynchos} compared to \emph{C. m. philippinus} (4.48mm, 95\% HDCI -3.64 to 12.55, 86.57\% probability of a positive non-zero difference; Fig. \ref{fig:martContrasts}).
+Nares to bill tip appears larger in \emph{C. m. philippinus} compared to \emph{C. m. japonensis}, indicating their nares being located farther up away from the bill tip (0.04, 95\% HDCI -0.04 to 0.11, 85.19\%).
 
 \subsection{Exploration of measurements using inverse distance weighted maps}\label{exploration-of-measurements-using-inverse-distance-weighted-maps}
 
 When treated as a single contiguous population, none of the morphometrics assessed singly showed a strong multi-modal distribution (see Fig. \ref{fig:overallPlot}), instead all revealed a unimodal normal distribution.
 
-When morphometric variation was visualized in the IDW (Inverse Distance Weighted interpolation) maps, we hotspots of multiple measurements were revealed, in Height at Nares, Exposed Culmen, Tarsus Length, and Proximal Bill Surface Area that centred on Northern Japan, in particular Hokkaido; crows in this region included some of the largest measured specimens.
-Not only did these crow specimens have the largest bills in absolute terms, but the ratio of Height at Nares to Tarsus Length as well as Proximal Bill Surface Area highlighted a tall bill even for their larger overall size (Fig. \ref{fig:idwMaps}).
+When morphometric variation was visualized in the IDW (Inverse Distance Weighted interpolation) maps, hotspots of multiple measurements were revealed in Height at Nares, Exposed Culmen, Tarsus Length, and Proximal Bill Surface Area that centred on Northern Japan, in particular Hokkaido; crows in this region included some of the largest measured specimens.
+Not only did these crow specimens have the largest bills in absolute terms, but the ratio of Height at Nares to Tarsus Length as well as Proximal Bill Surface Area highlighted they had tall bills even for their larger overall size (Fig. \ref{fig:idwMaps}).
 This finding was reinforced by the difference in these measurements between Klockenhoff's definition of \emph{C. m. japonensis} and all other subspecies (Fig. \ref{fig:measuresMap}).
 
 \begin{figure}
@@ -328,7 +322,7 @@ We also found a positive relationship between Proximal Bill Surface Area and tem
 \section{Discussion}\label{discussion}
 
 To characterize the geographic variation in Jungle Crow (\emph{Corvus macrorhynchos}) morphology, and to test existing subspecies propositions, we measured key morphological characteristics from over 1000 museum specimens.
-Bayesian comparisons of differences revealed no evidence for overall sexual dimorphism, nor any sexual dimorphism within any proposed subspecies.
+Bayesian comparisons of differences revealed no evidence for overall sexual dimorphism, nor any clear sexual dimorphism within any proposed subspecies.
 
 The biogeography of subspecies proposed by Klockenhoff (\citeproc{ref-klockenhoff_zur_1969}{1969}), and Martens (\citeproc{ref-martens_calls_2000}{2000}) were also largely not reflected in our measures of morphology, with several notable exceptions: \emph{Corvus m. japonensis} as defined by Klockenhoff exhibited larger bills even for their body size than other subspecies, as did \emph{C. m. hainanus}.
 Whereas both \emph{C. m. intermedius} and \emph{C. m. osai} showed smaller bills than expected for their body size.
@@ -389,6 +383,10 @@ Future studies should focus on these morphological ``hotspots'' as potential are
 \section{Acknowledgements}\label{acknowledgements}
 
 \subsection{Data and code availability}\label{data-and-code-availability}
+
+All data is available with associated data paper (\citeproc{ref-alamshah_distribution-wide_2025}{Alamshah \& Marshall, 2025}) providing a full description of the data and collection method.
+Data DOI: 10.5281/zenodo.12788353
+Direct URL: \url{https://zenodo.org/records/12788353}
 
 For all analysis we used R (v.4.4.2) (\citeproc{ref-base}{R Core Team, 2024}), and R Studio (v.2024.12.0+467) (\citeproc{ref-rstudio}{Posit team, 2024}). For general data manipulation we used glue (v.1.8.0) (\citeproc{ref-glue}{Hester \& Bryan, 2024}), and tidyverse (v.2.0.0) (\citeproc{ref-tidyverse}{Wickham et al., 2019}). For project and code management we used here (v.1.0.1) (\citeproc{ref-here}{Müller, 2020}), tarchetypes (v.0.11.0) (\citeproc{ref-tarchetypes}{Landau, 2021a}), and targets (v.1.9.0) (\citeproc{ref-targets}{Landau, 2021b}). For visualisation we used the following as expansions from the tidyverse suite of packages: ggdist (v.3.3.2) (\citeproc{ref-ggdist2024a}{Kay, 2024a},\citeproc{ref-ggdist2024b}{b}), and patchwork (v.1.3.0) (\citeproc{ref-patchwork}{Pedersen, 2024}). Other packages we used were brms (v.2.22.0) (\citeproc{ref-brms2017}{Bürkner, 2017b}, \citeproc{ref-brms2018}{2018b}, \citeproc{ref-brms2021}{2021b}), crew (v.0.10.2) (\citeproc{ref-crew}{Landau, 2024}), ggpubr (v.0.6.0) (\citeproc{ref-ggpubr}{Kassambara, 2023}), knitr (v.1.49) (\citeproc{ref-knitr2014}{Xie, 2014}, \citeproc{ref-knitr2015}{2015}, \citeproc{ref-knitr2024}{2024}), Metrics (v.0.1.4) (\citeproc{ref-Metrics}{Hamner \& Frasco, 2018}), tidybayes (v.3.0.7) (\citeproc{ref-tidybayes}{Kay, 2024c}), and tidyselect (v.1.2.1) (\citeproc{ref-tidyselect}{Henry \& Wickham, 2024}). To generate typeset outputs we used bookdown (v.0.42) (\citeproc{ref-bookdown2016}{Xie, 2016}, \citeproc{ref-bookdown2025}{2025}), and rmarkdown (v.2.29) (\citeproc{ref-rmarkdown2018}{Xie, Allaire \& Grolemund, 2018}; \citeproc{ref-rmarkdown2020}{Xie, Dervieux \& Riederer, 2020}; \citeproc{ref-rmarkdown2024}{Allaire et al., 2024}). To manipulate and manage spatial data we used , and terra (v.1.8.29) (\citeproc{ref-terra}{Hijmans, 2025}). To run models and explore model outputs we used , and performance (v.0.12.4) (\citeproc{ref-performance}{Lüdecke et al., 2021}).
 

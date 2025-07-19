@@ -1,5 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|b3d4fa8fe8350ab4|||||||||||||||
+.Random.seed|object|7679b2dd52252080|||||||||||||||
 bayesian_comparison_klockSpecies_Bill.base.length|stem|95bdc77a8c71c31e|95e7cc6ab94f49fb|b68ce1cebb2ee8b4|2042634294||t20122.7037829771s|6e44fb2b196f0193|4139393|qs|local|vector|||46.375|Rows containing NAs were excluded from the model.|
 bayesian_comparison_klockSpecies_Bill.base.width|stem|f115bff16e9756d6|3a18b6618f927d97|b68ce1cebb2ee8b4|1761105669||t20122.6977246239s|c672ee1041826086|4115975|qs|local|vector|||48.016|Rows containing NAs were excluded from the model.|
 bayesian_comparison_klockSpecies_Bill.width.at.skin.border|stem|3d06c2f3b18abc01|feeee2ebecfc2ad9|b68ce1cebb2ee8b4|-2085957028||t20122.7049432142s|c0029020cb773d64|4221761|qs|local|vector|||43.516|Rows containing NAs were excluded from the model.|
@@ -116,7 +116,7 @@ contrasts_data_martSpecies_Tarsus.length|stem|731bba383762e027|a6ef4c2323002a88|
 contrasts_data_martSpecies_Width.at.nares|stem|366a178c0ddd5234|6c4342c488b1a432|6fbfe3ff47fbd6d2|394774933||t20122.759311816s|ca03da4002a8ef54|1441|qs|local|vector|||3.328||
 contrasts_hdci_combined|stem|e2085bd0722b0aa6|4714ac8f0e1a37f3|d70aad0f8abe85a9|-1642309003||t20122.8298122307s|56b25eefb2e5bd62|95264|qs|local|vector|||0||
 contrasts_hdciIntraSex_plots|stem|d9645efd3a85e3b3|356044412cdc8f6f|71c4b168f160f4ae|-1911674860||t20122.8300114341s|b26ec94cdaccdbc2|330764|qs|local|vector|||1.235||
-contrasts_hdciMap_plots|stem|5ad57aaacf9fe4a3|53670f101bb23cad|afa37b5a274480b1|-2076952816||t20122.8298346663s|02ead25aed081e12|933218|qs|local|vector|||1.828|st_centroid assumes attributes are constant over geometries. st_centroid assumes attributes are constant over geometries|
+contrasts_hdciMap_plots|stem|8d8c316a9f233c86|53670f101bb23cad|2bcf67181f0cb0b3|-2076952816||t20288.5786367477s|1d2c09413041d112|9168084|qs|local|vector|||9.531|package terra was built under R version 4.4.3. package performance was built under R version 4.4.3. st_centroid assumes attributes are constant over geometries. st_centroid assumes attributes are constant over geometries|
 contrasts_hdciSex_plots|stem|4b03b2c610479a82|8775fee802aacbff|0cefbc0b01c13cab|1181241949||t20122.8299967372s|2f94bb4e88b9116f|281801|qs|local|vector|||0.328||
 contrasts_hdciSubspecies_plots|stem|9803a6e15f5bc155|01ea0570da1f8cf2|84cc1ba7b961773b|149022612||t20122.82999628s|584e3690cad10165|16109703|qs|local|vector|||8.329|A numeric legend.position argument in theme was deprecated in ggplot23.5.0.ℹ Please use the legend.position.inside argument of theme instead.|
 contrastsCombined|object|70a21d622ecdfa16|||||||||||||||
@@ -151,7 +151,7 @@ package_text|stem|703bcee81ed20ff4|39dc2c4cb1d736a3|46bd1b6558a5bc41|-1375331464
 pcks|object|0f9d829b3acde276|||||||||||||||
 plot_contrasts|function|5fb351496d8d7eef|||||||||||||||
 plot_contrasts_hdci|function|a2c312483867e21b|||||||||||||||
-plot_contrastsDiff_map|function|005b47df4888b1c9|||||||||||||||
+plot_contrastsDiff_map|function|d1013e80cb95b09c|||||||||||||||
 plot_contrastsIntraSex_hdci|function|b2f9fd7e39665991|||||||||||||||
 plot_contrastsSex_hdci|function|d66aac6ac757553d|||||||||||||||
 plot_prior_likli_post|function|8bfb332c77d6369e|||||||||||||||
@@ -206,7 +206,7 @@ r2_values_martSpecies_Width.at.nares|stem|06b9731f890bea37|f8514cfacbf7dba5|b04e
 read_crow_data|function|52bccf72d6eab492|||||||||||||||
 read_subspecies_polygons|function|f92d01816010206e|||||||||||||||
 render_rmd|function|59c351482d39df7e|||||||||||||||
-results_output|stem|7ea292e53e5a3ee8|033bc5ec257e517e|33e9e2d6d40c29d4|1992464557||t20216.4624147838s|f7afdd1d5b8b7ee0|139|qs|local|vector|||18.11|package terra was built under R version 4.4.3. Package xcolor Warning Package option usenames is obsolete and ignored on input line 265.. Package xcolor Warning Package option usenames is obsolete and ignored on input line 265.|
+results_output|stem|7ea292e53e5a3ee8|033bc5ec257e517e|33e9e2d6d40c29d4|1992464557||t20288.5824462932s|f7afdd1d5b8b7ee0|139|qs|local|vector|||16.063|package terra was built under R version 4.4.3. package performance was built under R version 4.4.3. Package xcolor Warning Package option usenames is obsolete and ignored on input line 265.. Package xcolor Warning Package option usenames is obsolete and ignored on input line 265.|
 resultsOutput|object|785df33c903465cd|||||||||||||||
 save_betas_values|function|6e0102c2c1e3b5b5|||||||||||||||
 save_r2_values|function|44cc0b8a9a39d963|||||||||||||||
