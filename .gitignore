@@ -1,6 +1,7 @@
 /Data/
 /ModelOutput/
 /notebook/
+Manuscript/*.pdf
 
 # History files
 .Rhistory
