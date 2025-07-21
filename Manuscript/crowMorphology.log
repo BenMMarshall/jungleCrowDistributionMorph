@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.19)  19 JUL 2025 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.19)  21 JUL 2025 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**F:/Projects/jungleCrowDistributionMorph/Manuscript/crowMorphology.tex
-(f:/Projects/jungleCrowDistributionMorph/Manuscript/crowMorphology.tex
+**crowMorphology.tex
+(./crowMorphology.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
 (c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
@@ -530,171 +530,171 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 124.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 128.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [2
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on input line 129.
+LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on input line 133.
 (c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcharter/TS1XCharter-TLF.fd
 File: TS1XCharter-TLF.fd 2020/05/25 (msharpe) Font definitions for TS1/XCharter-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 129.
-
-LaTeX Font Warning: Font shape `OT1/phv/n/n' undefined
-(Font)              using `OT1/phv/m/n' instead on input line 160.
-
+(Font)              scaled to size 10.0pt on input line 133.
 
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 166.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 163.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [3{c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/xcharter/xch1_co4ru4.enc}]
-<../Figures/combined Subspecies Plot.pdf, id=170, 739.76375pt x 454.69875pt>
+
+LaTeX Font Warning: Font shape `OT1/phv/n/n' undefined
+(Font)              using `OT1/phv/m/n' instead on input line 164.
+
+<../Figures/combined Subspecies Plot.pdf, id=167, 739.76375pt x 454.69875pt>
 File: ../Figures/combined Subspecies Plot.pdf Graphic file (type pdf)
 <use ../Figures/combined Subspecies Plot.pdf>
-Package pdftex.def Info: ../Figures/combined Subspecies Plot.pdf  used on input line 168.
+Package pdftex.def Info: ../Figures/combined Subspecies Plot.pdf  used on input line 172.
 (pdftex.def)             Requested size: 445.56699pt x 273.869pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 168.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 187.
+(Font)              scaled to size 10.0pt on input line 172.
 
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 191.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 186.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [4 <../Figures/combined Subspecies Plot.pdf>]
-<../Figures/OverallSummaryPlot.pdf, id=247, 511.9125pt x 341.275pt>
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 191.
+<../Figures/OverallSummaryPlot.pdf, id=243, 511.9125pt x 341.275pt>
 File: ../Figures/OverallSummaryPlot.pdf Graphic file (type pdf)
 <use ../Figures/OverallSummaryPlot.pdf>
-Package pdftex.def Info: ../Figures/OverallSummaryPlot.pdf  used on input line 216.
+Package pdftex.def Info: ../Figures/OverallSummaryPlot.pdf  used on input line 220.
 (pdftex.def)             Requested size: 445.56699pt x 297.04744pt.
-<../Figures/combined Subspecies Difference Plot.pdf, id=251, 853.1875pt x 568.1225pt>
+<../Figures/combined Subspecies Difference Plot.pdf, id=247, 853.1875pt x 568.1225pt>
 File: ../Figures/combined Subspecies Difference Plot.pdf Graphic file (type pdf)
 <use ../Figures/combined Subspecies Difference Plot.pdf>
-Package pdftex.def Info: ../Figures/combined Subspecies Difference Plot.pdf  used on input line 232.
+Package pdftex.def Info: ../Figures/combined Subspecies Difference Plot.pdf  used on input line 236.
 (pdftex.def)             Requested size: 445.56699pt x 296.6997pt.
 
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 241.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 239.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [5]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 241.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 239.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [6 <../Figures/OverallSummaryPlot.pdf> <../Figures/combined Subspecies Difference Plot.pdf>]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 283.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 287.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [7]
-<../Figures/IDWmaps.pdf, id=298, 910.40125pt x 910.40125pt>
+<../Figures/IDWmaps.pdf, id=297, 910.40125pt x 910.40125pt>
 File: ../Figures/IDWmaps.pdf Graphic file (type pdf)
 <use ../Figures/IDWmaps.pdf>
-Package pdftex.def Info: ../Figures/IDWmaps.pdf  used on input line 285.
+Package pdftex.def Info: ../Figures/IDWmaps.pdf  used on input line 289.
 (pdftex.def)             Requested size: 445.56699pt x 445.57263pt.
 
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 300.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 299.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [8 <../Figures/IDWmaps.pdf>]
-<../Figures/climMap_NtBT.ExCu.pdf, id=362, 597.23125pt x 597.23125pt>
+<../Figures/climMap_NtBT.ExCu.pdf, id=361, 597.23125pt x 597.23125pt>
 File: ../Figures/climMap_NtBT.ExCu.pdf Graphic file (type pdf)
 <use ../Figures/climMap_NtBT.ExCu.pdf>
-Package pdftex.def Info: ../Figures/climMap_NtBT.ExCu.pdf  used on input line 312.
+Package pdftex.def Info: ../Figures/climMap_NtBT.ExCu.pdf  used on input line 316.
 (pdftex.def)             Requested size: 445.56699pt x 445.57117pt.
-<../Figures/climMap_ExCuNtBTxHaNaTaLe.pdf, id=364, 597.23125pt x 597.23125pt>
+<../Figures/climMap_ExCuNtBTxHaNaTaLe.pdf, id=363, 597.23125pt x 597.23125pt>
 File: ../Figures/climMap_ExCuNtBTxHaNaTaLe.pdf Graphic file (type pdf)
 <use ../Figures/climMap_ExCuNtBTxHaNaTaLe.pdf>
-Package pdftex.def Info: ../Figures/climMap_ExCuNtBTxHaNaTaLe.pdf  used on input line 319.
+Package pdftex.def Info: ../Figures/climMap_ExCuNtBTxHaNaTaLe.pdf  used on input line 323.
 (pdftex.def)             Requested size: 445.56699pt x 445.57117pt.
 
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 344.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 348.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [9]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 344.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 348.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [10 <../Figures/climMap_NtBT.ExCu.pdf>]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 344.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 348.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [11 <../Figures/climMap_ExCuNtBTxHaNaTaLe.pdf>]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 383.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 387.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [12]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 407.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 412.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [13]
-<../Figures/_HDCI_sex_contrasts.pdf, id=552, 795.97375pt x 454.69875pt>
+<../Figures/_HDCI_sex_contrasts.pdf, id=551, 795.97375pt x 454.69875pt>
 File: ../Figures/_HDCI_sex_contrasts.pdf Graphic file (type pdf)
 <use ../Figures/_HDCI_sex_contrasts.pdf>
-Package pdftex.def Info: ../Figures/_HDCI_sex_contrasts.pdf  used on input line 412.
+Package pdftex.def Info: ../Figures/_HDCI_sex_contrasts.pdf  used on input line 417.
 (pdftex.def)             Requested size: 445.56699pt x 254.52548pt.
-<../Figures/klockSpecies_HDCI_intraSubspeciesSex_contrasts.pdf, id=553, 795.97375pt x 454.69875pt>
+<../Figures/klockSpecies_HDCI_intraSubspeciesSex_contrasts.pdf, id=552, 795.97375pt x 454.69875pt>
 File: ../Figures/klockSpecies_HDCI_intraSubspeciesSex_contrasts.pdf Graphic file (type pdf)
 <use ../Figures/klockSpecies_HDCI_intraSubspeciesSex_contrasts.pdf>
-Package pdftex.def Info: ../Figures/klockSpecies_HDCI_intraSubspeciesSex_contrasts.pdf  used on input line 416.
+Package pdftex.def Info: ../Figures/klockSpecies_HDCI_intraSubspeciesSex_contrasts.pdf  used on input line 421.
 (pdftex.def)             Requested size: 445.56699pt x 254.52548pt.
-<../Figures/martSpecies_HDCI_intraSubspeciesSex_contrasts.pdf, id=554, 795.97375pt x 454.69875pt>
+<../Figures/martSpecies_HDCI_intraSubspeciesSex_contrasts.pdf, id=553, 795.97375pt x 454.69875pt>
 File: ../Figures/martSpecies_HDCI_intraSubspeciesSex_contrasts.pdf Graphic file (type pdf)
 <use ../Figures/martSpecies_HDCI_intraSubspeciesSex_contrasts.pdf>
-Package pdftex.def Info: ../Figures/martSpecies_HDCI_intraSubspeciesSex_contrasts.pdf  used on input line 420.
+Package pdftex.def Info: ../Figures/martSpecies_HDCI_intraSubspeciesSex_contrasts.pdf  used on input line 425.
 (pdftex.def)             Requested size: 445.56699pt x 254.52548pt.
-<../Figures/klockSpecies_HDCI_contrasts.pdf, id=555, 1222.5675pt x 1251.67625pt>
+<../Figures/klockSpecies_HDCI_contrasts.pdf, id=554, 1222.5675pt x 1251.67625pt>
 File: ../Figures/klockSpecies_HDCI_contrasts.pdf Graphic file (type pdf)
 <use ../Figures/klockSpecies_HDCI_contrasts.pdf>
-Package pdftex.def Info: ../Figures/klockSpecies_HDCI_contrasts.pdf  used on input line 424.
+Package pdftex.def Info: ../Figures/klockSpecies_HDCI_contrasts.pdf  used on input line 429.
 (pdftex.def)             Requested size: 445.56699pt x 456.16092pt.
-<../Figures/martSpecies_HDCI_contrasts.pdf, id=556, 853.1875pt x 540.0175pt>
+<../Figures/martSpecies_HDCI_contrasts.pdf, id=555, 853.1875pt x 540.0175pt>
 File: ../Figures/martSpecies_HDCI_contrasts.pdf Graphic file (type pdf)
 <use ../Figures/martSpecies_HDCI_contrasts.pdf>
-Package pdftex.def Info: ../Figures/martSpecies_HDCI_contrasts.pdf  used on input line 428.
+Package pdftex.def Info: ../Figures/martSpecies_HDCI_contrasts.pdf  used on input line 433.
 (pdftex.def)             Requested size: 445.56699pt x 282.02199pt.
-<../Figures/measuresMap.pdf, id=557, 910.40125pt x 910.40125pt>
+<../Figures/measuresMap.pdf, id=556, 910.40125pt x 910.40125pt>
 File: ../Figures/measuresMap.pdf Graphic file (type pdf)
 <use ../Figures/measuresMap.pdf>
-Package pdftex.def Info: ../Figures/measuresMap.pdf  used on input line 432.
+Package pdftex.def Info: ../Figures/measuresMap.pdf  used on input line 437.
 (pdftex.def)             Requested size: 445.56699pt x 445.57263pt.
-<../Figures/climMap_Height.at.nares.pdf, id=558, 597.23125pt x 597.23125pt>
+<../Figures/climMap_Height.at.nares.pdf, id=557, 597.23125pt x 597.23125pt>
 File: ../Figures/climMap_Height.at.nares.pdf Graphic file (type pdf)
 <use ../Figures/climMap_Height.at.nares.pdf>
-Package pdftex.def Info: ../Figures/climMap_Height.at.nares.pdf  used on input line 436.
+Package pdftex.def Info: ../Figures/climMap_Height.at.nares.pdf  used on input line 441.
 (pdftex.def)             Requested size: 445.56699pt x 445.57117pt.
-<../Figures/climMap_Tarsus.length.pdf, id=559, 597.23125pt x 597.23125pt>
+<../Figures/climMap_Tarsus.length.pdf, id=558, 597.23125pt x 597.23125pt>
 File: ../Figures/climMap_Tarsus.length.pdf Graphic file (type pdf)
 <use ../Figures/climMap_Tarsus.length.pdf>
-Package pdftex.def Info: ../Figures/climMap_Tarsus.length.pdf  used on input line 440.
+Package pdftex.def Info: ../Figures/climMap_Tarsus.length.pdf  used on input line 445.
 (pdftex.def)             Requested size: 445.56699pt x 445.57117pt.
 
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 443.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 448.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [14
 
@@ -702,40 +702,40 @@ Package pdftex.def Info: PDFheaderImage.png  used on input line 443.
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 443.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 448.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [15 <../Figures/klockSpecies_HDCI_intraSubspeciesSex_contrasts.pdf> <../Figures/martSpecies_HDCI_intraSubspeciesSex_contrasts.pdf>]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 443.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 448.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [16 <../Figures/klockSpecies_HDCI_contrasts.pdf>]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 443.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 448.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [17 <../Figures/martSpecies_HDCI_contrasts.pdf>]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 443.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 448.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [18 <../Figures/measuresMap.pdf>]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 443.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 448.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [19 <../Figures/climMap_Height.at.nares.pdf>]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 443.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 448.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [20 <../Figures/climMap_Tarsus.length.pdf>]
-Overfull \hbox (19.79591pt too wide) in paragraph at lines 493--494
+Overfull \hbox (19.79591pt too wide) in paragraph at lines 498--499
 \T1/XCharter-TLF/m/n/10 Species in South and South-east Su-lawesi. \T1/XCharter-TLF/m/it/10 In-ter-na-tional Jour-nal of Pri-ma-tol-ogy \T1/XCharter-TLF/m/n/10 31:1123--1146. DOI: [][]10.1007/s10764-
  []
 
@@ -743,17 +743,17 @@ Overfull \hbox (19.79591pt too wide) in paragraph at lines 493--494
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 531.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 536.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [21
 
 ]
-Overfull \hbox (2.25888pt too wide) in paragraph at lines 571--572
+Overfull \hbox (2.25888pt too wide) in paragraph at lines 576--577
 \T1/XCharter-TLF/m/n/10 com-par-i-son and test-ing of sta-tis-ti-cal mod-els. \T1/XCharter-TLF/m/it/10 Jour-nal of Open Source Soft-ware \T1/XCharter-TLF/m/n/10 6:3139. DOI: [][]10.21105/joss.03139[][]. 
  []
 
 
-Overfull \hbox (12.09901pt too wide) in paragraph at lines 607--608
+Overfull \hbox (12.09901pt too wide) in paragraph at lines 612--613
 \T1/XCharter-TLF/m/it/10 Pro-ceed-ings of the Royal So-ci-ety of Lon-don. Se-ries B: Bi-o-log-i-cal Sci-ences \T1/XCharter-TLF/m/n/10 265:397--407. DOI: [][]10.1098/rspb.1998.0308[][]. 
  []
 
@@ -761,13 +761,13 @@ Overfull \hbox (12.09901pt too wide) in paragraph at lines 607--608
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 632.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 637.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [22]
 
 File: PDFheaderImage.png Graphic file (type png)
 <use PDFheaderImage.png>
-Package pdftex.def Info: PDFheaderImage.png  used on input line 701.
+Package pdftex.def Info: PDFheaderImage.png  used on input line 706.
 (pdftex.def)             Requested size: 80.50957pt x 12.0pt.
 [23] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -783,18 +783,18 @@ Package rerunfilecheck Info: File `crowMorphology.out' has not changed.
 (rerunfilecheck)             Checksum: 409FE48029C0720685A6993C86769E5C;3170.
  ) 
 Here is how much of TeX's memory you used:
- 14229 strings out of 469797
- 237214 string characters out of 5480962
- 669363 words of memory out of 5000000
+ 14227 strings out of 469797
+ 237012 string characters out of 5480962
+ 669801 words of memory out of 5000000
  42228 multiletter control sequences out of 15000+600000
  701900 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,16n,131p,2052b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,16n,131p,2001b,603s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/benja/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk><c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb><c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Users/benja/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on crowMorphology.pdf (23 pages, 34200925 bytes).
+Output written on crowMorphology.pdf (23 pages, 34202578 bytes).
 PDF statistics:
- 929 PDF objects out of 1000 (max. 8388607)
- 720 compressed objects within 8 object streams
+ 928 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
  138 named destinations out of 1000 (max. 500000)
  212 words of extra memory for PDF output out of 10000 (max. 10000000)
 
